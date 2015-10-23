@@ -1,0 +1,73 @@
+
+output 
+
+*********************************************************
+OLS estimation results
+Observations 145
+R-squared 0.042248
+Sigma-squared 3.578756
+
+Results (Ordinary var-cov estimator)
+
+            estimate     st.err.     t-stat.     p-value  
+constant      14.320       8.470       1.691       0.093
+labor          1.491       1.398       1.067       0.288
+capital       -1.032       0.476      -2.167       0.032
+fuel          -1.058       1.634      -0.647       0.519
+
+*********************************************************
+
+labor  
+
+*********************************************************
+OLS estimation results
+Observations 145
+R-squared 0.170674
+Sigma-squared 0.012889
+
+Results (Ordinary var-cov estimator)
+
+            estimate     st.err.     t-stat.     p-value  
+constant       1.663       0.494       3.367       0.001
+output         0.005       0.005       1.067       0.288
+capital        0.129       0.027       4.797       0.000
+fuel          -0.280       0.095      -2.931       0.004
+
+*********************************************************
+
+capital
+
+*********************************************************
+OLS estimation results
+Observations 145
+R-squared 0.176148
+Sigma-squared 0.108378
+
+Results (Ordinary var-cov estimator)
+
+            estimate     st.err.     t-stat.     p-value  
+constant      -0.709       1.488      -0.477       0.634
+output        -0.031       0.014      -2.167       0.032
+labor          1.086       0.226       4.797       0.000
+fuel           0.658       0.279       2.356       0.020
+
+*********************************************************
+
+fuel   
+
+*********************************************************
+OLS estimation results
+Observations 145
+R-squared 0.079293
+Sigma-squared 0.009476
+
+Results (Ordinary var-cov estimator)
+
+            estimate     st.err.     t-stat.     p-value  
+constant       5.129       0.085      60.147       0.000
+output        -0.003       0.004      -0.647       0.519
+labor         -0.206       0.070      -2.931       0.004
+capital        0.058       0.024       2.356       0.020
+
+*********************************************************
+

@@ -1,0 +1,13 @@
+Name: mpi
+Version: 1.2.0
+Date: 2014-01-07
+Author: Riccardo Corradini <riccardocorradini@yahoo.it>, Jaroslav Hajek, Carlo de Falco
+Maintainer: Carlo de Falco
+Title: mpi
+Description: Octave bindings for basic Message Passing Interface (MPI) functions for parallel computing.
+Depends: octave (>= 3.6.4)
+SystemRequirements: mpi
+BuildRequires: mpi
+Autoload: no
+License: GPLv3+
+Url: http://octave.sf.net

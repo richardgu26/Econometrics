@@ -1,0 +1,27 @@
+This directory contains files to replicate results in "Indirect Likelihood Inference" by
+Michael Creel and Dennis Kristensen. 
+
+These files allow estimation of the DSGE model, using the first design, with a sample 
+size of n=160. The files replicate the results in Table 3.
+
+The files generate only 20 Monte Carlo replications, and use a small number of simulations
+S=100. You should expect more bias than is presented in Table 3, because S is too small.
+This is done so that you can see results reasonably quickly. To get more reliable results,
+modify the file 'runme' at the indicated place to increase the variable 'reps'.
+
+These files require Dynare, and the ANN software of Arya and Mount, modified to work with
+GNU Octave. The easiest way to run this example is to obtain the PelicanHPC Linux distribution
+(a live CD image file), which has all software pre-installed. Then run PelicanHPC using
+virtualization software (e.g., Virtualbox, which is free). You do not need to use Linux to do this,
+it works with Linux, Windows, and MacOS. The steps are
+
+1. Install Virtualbox (http://www.virtualbox.org) or another virtualization package for your
+   operating system.
+2. Download the most recent PelicanHPC image (http://pareto.uab.es/mcreel/PelicanHPC).
+3. Boot PelicanHPC in a virtual machine.
+4. go to the /home/user/Econometrics/IL/DSGE directory, open a terminal, and type './runme'.
+
+With that, you will obtain results similar to those presented in the paper.
+
+for support, please write to michael.creel@uab.es
+

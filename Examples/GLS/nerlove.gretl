@@ -1,0 +1,9 @@
+open /usr/share/gretl/data/misc/klein.gdt
+genr W = Wp+Wg
+lags P
+ols C const P P_1 W
+(* commands pertaining to model 1 *)
+lmtest  1 --autocorr
+(* saved objects:
+model 1 "Klein model 1 - OLS"
+*)

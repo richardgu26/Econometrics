@@ -1,0 +1,45 @@
+MPITB extensions found
+
+======================================================
+BFGSMIN final results
+
+Used numeric gradient
+
+------------------------------------------------------
+STRONG CONVERGENCE
+Function conv 1  Param conv 1  Gradient conv 1
+------------------------------------------------------
+Objective function value -0.0130329
+Stepsize 0.102833
+43 iterations
+------------------------------------------------------
+
+ param    gradient  change
+ 15.9999  -0.0000   0.0000
+-28.8119   0.0000   0.0000
+The result with poor start values
+ans =
+
+   16.000  -28.812
+
+
+================================================
+SAMIN final results
+NORMAL CONVERGENCE
+
+Func. tol. 1.000000e-10	Param. tol. 1.000000e-03
+Obj. fn. value -0.100023
+
+	   parameter	    search width
+            0.037419            0.000018
+           -0.000000            0.000051
+================================================
+Now try a battery of random start values and 
+a short BFGS on each, then iterate to convergence
+The result using 20 randoms start values
+ans =
+
+   3.7417e-02   2.7628e-07
+
+The true maximizer is near (0.037,0)
+

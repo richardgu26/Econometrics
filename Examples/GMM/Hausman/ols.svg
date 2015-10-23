@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+ viewBox="0 0 576 432"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 4.6 patchlevel 6 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="576" height="432" fill="none"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.333' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.333' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.333' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.333' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.333' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.333' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.333' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(255, 255, 255)' points = '36.4,408.0 559.0,408.0 559.0,36.2 36.4,36.2 '/>
+	</g>
+	<path stroke='black'  d='M36.4,408.0 L36.4,36.2 L559.0,36.2 L559.0,408.0 L36.4,408.0  '/></g>
+<g style="fill:none; color:black; stroke:black; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M36.4,408.0 L44.8,408.0 M559.1,408.0 L550.7,408.0  '/>	<g transform="translate(30.8,411.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,361.5 L44.8,361.5 M559.1,361.5 L550.7,361.5  '/>	<g transform="translate(30.8,365.2)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.01</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,315.0 L44.8,315.0 M559.1,315.0 L550.7,315.0  '/>	<g transform="translate(30.8,318.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.02</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,268.5 L44.8,268.5 M559.1,268.5 L550.7,268.5  '/>	<g transform="translate(30.8,272.2)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.03</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,222.0 L44.8,222.0 M559.1,222.0 L550.7,222.0  '/>	<g transform="translate(30.8,225.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.04</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,175.6 L44.8,175.6 M559.1,175.6 L550.7,175.6  '/>	<g transform="translate(30.8,179.3)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.05</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,129.1 L44.8,129.1 M559.1,129.1 L550.7,129.1  '/>	<g transform="translate(30.8,132.8)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.06</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,82.6 L44.8,82.6 M559.1,82.6 L550.7,82.6  '/>	<g transform="translate(30.8,86.3)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.07</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,36.1 L44.8,36.1 M559.1,36.1 L550.7,36.1  '/>	<g transform="translate(30.8,39.8)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:end">
+		<text><tspan>0.08</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,408.0 L36.4,399.6 M36.4,36.1 L36.4,44.5  '/>	<g transform="translate(36.4,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.28</tspan></text>
+	</g>
+	<path stroke='black'  d='M123.5,408.0 L123.5,399.6 M123.5,36.1 L123.5,44.5  '/>	<g transform="translate(123.5,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.3</tspan></text>
+	</g>
+	<path stroke='black'  d='M210.6,408.0 L210.6,399.6 M210.6,36.1 L210.6,44.5  '/>	<g transform="translate(210.6,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.32</tspan></text>
+	</g>
+	<path stroke='black'  d='M297.8,408.0 L297.8,399.6 M297.8,36.1 L297.8,44.5  '/>	<g transform="translate(297.8,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.34</tspan></text>
+	</g>
+	<path stroke='black'  d='M384.9,408.0 L384.9,399.6 M384.9,36.1 L384.9,44.5  '/>	<g transform="translate(384.9,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.36</tspan></text>
+	</g>
+	<path stroke='black'  d='M472.0,408.0 L472.0,399.6 M472.0,36.1 L472.0,44.5  '/>	<g transform="translate(472.0,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.38</tspan></text>
+	</g>
+	<path stroke='black'  d='M559.1,408.0 L559.1,399.6 M559.1,36.1 L559.1,44.5  '/>	<g transform="translate(559.1,423.7)" style="stroke:none; fill:rgb(0,0,0); font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>2.4</tspan></text>
+	</g>
+	<path stroke='black'  d='M36.4,36.1 L36.4,408.0 L559.1,408.0 L559.1,36.1 L36.4,36.1 Z  '/>	<g transform="translate(297.7,21.8)" style="stroke:none; fill:black; font-family:{}; font-size:10.00pt; text-anchor:middle">
+		<text><tspan>OLS estimates</tspan></text>
+	</g>
+</g>
+	<g id="gnuplot_plot_1a" ><title>gnuplot_plot_1a</title>
+<g style="fill:none; color:white; stroke:black; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '70.2,408.0 70.2,408.0 70.2,398.7 78.5,398.7 78.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M70.2,408.0 L70.2,398.7 L78.5,398.7 L78.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_2a" ><title>gnuplot_plot_2a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M70.2,408.0 L70.2,398.7 L78.5,398.7 L78.5,408.0 L70.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_3a" ><title>gnuplot_plot_3a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '78.5,408.0 78.5,408.0 78.5,408.0 86.8,408.0 86.8,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M78.5,408.0 L86.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_4a" ><title>gnuplot_plot_4a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M78.5,408.0 L86.8,408.0 L78.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_5a" ><title>gnuplot_plot_5a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '86.8,408.0 86.8,408.0 86.8,403.4 95.1,403.4 95.1,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M86.8,408.0 L86.8,403.4 L95.1,403.4 L95.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_6a" ><title>gnuplot_plot_6a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M86.8,408.0 L86.8,403.4 L95.1,403.4 L95.1,408.0 L86.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_7a" ><title>gnuplot_plot_7a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '95.1,408.0 95.1,408.0 95.1,398.7 103.4,398.7 103.4,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M95.1,408.0 L95.1,398.7 L103.4,398.7 L103.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_8a" ><title>gnuplot_plot_8a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M95.1,408.0 L95.1,398.7 L103.4,398.7 L103.4,408.0 L95.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_9a" ><title>gnuplot_plot_9a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '103.4,408.0 103.4,408.0 103.4,403.4 111.7,403.4 111.7,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M103.4,408.0 L103.4,403.4 L111.7,403.4 L111.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_10a" ><title>gnuplot_plot_10a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M103.4,408.0 L103.4,403.4 L111.7,403.4 L111.7,408.0 L103.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_11a" ><title>gnuplot_plot_11a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '111.7,408.0 111.7,408.0 111.7,394.1 120.0,394.1 120.0,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M111.7,408.0 L111.7,394.1 L120.0,394.1 L120.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_12a" ><title>gnuplot_plot_12a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M111.7,408.0 L111.7,394.1 L120.0,394.1 L120.0,408.0 L111.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_13a" ><title>gnuplot_plot_13a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '120.0,408.0 120.0,408.0 120.0,384.8 128.3,384.8 128.3,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M120.0,408.0 L120.0,384.8 L128.3,384.8 L128.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_14a" ><title>gnuplot_plot_14a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M120.0,408.0 L120.0,384.8 L128.3,384.8 L128.3,408.0 L120.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_15a" ><title>gnuplot_plot_15a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '128.3,408.0 128.3,408.0 128.3,384.8 136.6,384.8 136.6,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M128.3,408.0 L128.3,384.8 L136.6,384.8 L136.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_16a" ><title>gnuplot_plot_16a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M128.3,408.0 L128.3,384.8 L136.6,384.8 L136.6,408.0 L128.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_17a" ><title>gnuplot_plot_17a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '136.6,408.0 136.6,408.0 136.6,389.4 144.9,389.4 144.9,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M136.6,408.0 L136.6,389.4 L144.9,389.4 L144.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_18a" ><title>gnuplot_plot_18a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M136.6,408.0 L136.6,389.4 L144.9,389.4 L144.9,408.0 L136.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_19a" ><title>gnuplot_plot_19a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '144.9,408.0 144.9,408.0 144.9,361.5 153.2,361.5 153.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M144.9,408.0 L144.9,361.5 L153.2,361.5 L153.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_20a" ><title>gnuplot_plot_20a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M144.9,408.0 L144.9,361.5 L153.2,361.5 L153.2,408.0 L144.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_21a" ><title>gnuplot_plot_21a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '153.2,408.0 153.2,408.0 153.2,356.9 161.5,356.9 161.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M153.2,408.0 L153.2,356.9 L161.5,356.9 L161.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_22a" ><title>gnuplot_plot_22a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M153.2,408.0 L153.2,356.9 L161.5,356.9 L161.5,408.0 L153.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_23a" ><title>gnuplot_plot_23a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '161.5,408.0 161.5,408.0 161.5,361.5 169.8,361.5 169.8,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M161.5,408.0 L161.5,361.5 L169.8,361.5 L169.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_24a" ><title>gnuplot_plot_24a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M161.5,408.0 L161.5,361.5 L169.8,361.5 L169.8,408.0 L161.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_25a" ><title>gnuplot_plot_25a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '169.8,408.0 169.8,408.0 169.8,296.4 178.2,296.4 178.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M169.8,408.0 L169.8,296.4 L178.2,296.4 L178.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_26a" ><title>gnuplot_plot_26a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M169.8,408.0 L169.8,296.4 L178.2,296.4 L178.2,408.0 L169.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_27a" ><title>gnuplot_plot_27a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '178.2,408.0 178.2,408.0 178.2,333.6 186.5,333.6 186.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M178.2,408.0 L178.2,333.6 L186.5,333.6 L186.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_28a" ><title>gnuplot_plot_28a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M178.2,408.0 L178.2,333.6 L186.5,333.6 L186.5,408.0 L178.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_29a" ><title>gnuplot_plot_29a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '186.5,408.0 186.5,408.0 186.5,287.1 194.8,287.1 194.8,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M186.5,408.0 L186.5,287.1 L194.8,287.1 L194.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_30a" ><title>gnuplot_plot_30a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M186.5,408.0 L186.5,287.1 L194.8,287.1 L194.8,408.0 L186.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_31a" ><title>gnuplot_plot_31a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '194.8,408.0 194.8,408.0 194.8,268.5 203.1,268.5 203.1,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M194.8,408.0 L194.8,268.5 L203.1,268.5 L203.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_32a" ><title>gnuplot_plot_32a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M194.8,408.0 L194.8,268.5 L203.1,268.5 L203.1,408.0 L194.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_33a" ><title>gnuplot_plot_33a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '203.1,408.0 203.1,408.0 203.1,277.8 211.4,277.8 211.4,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M203.1,408.0 L203.1,277.8 L211.4,277.8 L211.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_34a" ><title>gnuplot_plot_34a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M203.1,408.0 L203.1,277.8 L211.4,277.8 L211.4,408.0 L203.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_35a" ><title>gnuplot_plot_35a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '211.4,408.0 211.4,408.0 211.4,240.6 219.7,240.6 219.7,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M211.4,408.0 L211.4,240.6 L219.7,240.6 L219.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_36a" ><title>gnuplot_plot_36a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M211.4,408.0 L211.4,240.6 L219.7,240.6 L219.7,408.0 L211.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_37a" ><title>gnuplot_plot_37a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '219.7,408.0 219.7,408.0 219.7,203.5 228.0,203.5 228.0,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M219.7,408.0 L219.7,203.5 L228.0,203.5 L228.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_38a" ><title>gnuplot_plot_38a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M219.7,408.0 L219.7,203.5 L228.0,203.5 L228.0,408.0 L219.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_39a" ><title>gnuplot_plot_39a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '228.0,408.0 228.0,408.0 228.0,245.3 236.3,245.3 236.3,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M228.0,408.0 L228.0,245.3 L236.3,245.3 L236.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_40a" ><title>gnuplot_plot_40a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M228.0,408.0 L228.0,245.3 L236.3,245.3 L236.3,408.0 L228.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_41a" ><title>gnuplot_plot_41a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '236.3,408.0 236.3,408.0 236.3,208.1 244.6,208.1 244.6,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M236.3,408.0 L236.3,208.1 L244.6,208.1 L244.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_42a" ><title>gnuplot_plot_42a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M236.3,408.0 L236.3,208.1 L244.6,208.1 L244.6,408.0 L236.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_43a" ><title>gnuplot_plot_43a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '244.6,408.0 244.6,408.0 244.6,157.0 252.9,157.0 252.9,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M244.6,408.0 L244.6,157.0 L252.9,157.0 L252.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_44a" ><title>gnuplot_plot_44a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M244.6,408.0 L244.6,157.0 L252.9,157.0 L252.9,408.0 L244.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_45a" ><title>gnuplot_plot_45a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '252.9,408.0 252.9,408.0 252.9,212.8 261.2,212.8 261.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M252.9,408.0 L252.9,212.8 L261.2,212.8 L261.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_46a" ><title>gnuplot_plot_46a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M252.9,408.0 L252.9,212.8 L261.2,212.8 L261.2,408.0 L252.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_47a" ><title>gnuplot_plot_47a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '261.2,408.0 261.2,408.0 261.2,129.1 269.5,129.1 269.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M261.2,408.0 L261.2,129.1 L269.5,129.1 L269.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_48a" ><title>gnuplot_plot_48a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M261.2,408.0 L261.2,129.1 L269.5,129.1 L269.5,408.0 L261.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_49a" ><title>gnuplot_plot_49a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '269.5,408.0 269.5,408.0 269.5,175.6 277.9,175.6 277.9,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M269.5,408.0 L269.5,175.6 L277.9,175.6 L277.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_50a" ><title>gnuplot_plot_50a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M269.5,408.0 L269.5,175.6 L277.9,175.6 L277.9,408.0 L269.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_51a" ><title>gnuplot_plot_51a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '277.9,408.0 277.9,408.0 277.9,180.2 286.2,180.2 286.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M277.9,408.0 L277.9,180.2 L286.2,180.2 L286.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_52a" ><title>gnuplot_plot_52a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M277.9,408.0 L277.9,180.2 L286.2,180.2 L286.2,408.0 L277.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_53a" ><title>gnuplot_plot_53a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '286.2,408.0 286.2,408.0 286.2,115.1 294.5,115.1 294.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M286.2,408.0 L286.2,115.1 L294.5,115.1 L294.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_54a" ><title>gnuplot_plot_54a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M286.2,408.0 L286.2,115.1 L294.5,115.1 L294.5,408.0 L286.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_55a" ><title>gnuplot_plot_55a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '294.5,408.0 294.5,408.0 294.5,189.5 302.8,189.5 302.8,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M294.5,408.0 L294.5,189.5 L302.8,189.5 L302.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_56a" ><title>gnuplot_plot_56a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M294.5,408.0 L294.5,189.5 L302.8,189.5 L302.8,408.0 L294.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_57a" ><title>gnuplot_plot_57a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '302.8,408.0 302.8,408.0 302.8,212.8 311.1,212.8 311.1,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M302.8,408.0 L302.8,212.8 L311.1,212.8 L311.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_58a" ><title>gnuplot_plot_58a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M302.8,408.0 L302.8,212.8 L311.1,212.8 L311.1,408.0 L302.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_59a" ><title>gnuplot_plot_59a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '311.1,408.0 311.1,408.0 311.1,249.9 319.4,249.9 319.4,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M311.1,408.0 L311.1,249.9 L319.4,249.9 L319.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_60a" ><title>gnuplot_plot_60a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M311.1,408.0 L311.1,249.9 L319.4,249.9 L319.4,408.0 L311.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_61a" ><title>gnuplot_plot_61a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '319.4,408.0 319.4,408.0 319.4,226.7 327.7,226.7 327.7,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M319.4,408.0 L319.4,226.7 L327.7,226.7 L327.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_62a" ><title>gnuplot_plot_62a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M319.4,408.0 L319.4,226.7 L327.7,226.7 L327.7,408.0 L319.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_63a" ><title>gnuplot_plot_63a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '327.7,408.0 327.7,408.0 327.7,240.6 336.0,240.6 336.0,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M327.7,408.0 L327.7,240.6 L336.0,240.6 L336.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_64a" ><title>gnuplot_plot_64a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M327.7,408.0 L327.7,240.6 L336.0,240.6 L336.0,408.0 L327.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_65a" ><title>gnuplot_plot_65a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '336.0,408.0 336.0,408.0 336.0,282.5 344.3,282.5 344.3,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M336.0,408.0 L336.0,282.5 L344.3,282.5 L344.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_66a" ><title>gnuplot_plot_66a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M336.0,408.0 L336.0,282.5 L344.3,282.5 L344.3,408.0 L336.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_67a" ><title>gnuplot_plot_67a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '344.3,408.0 344.3,408.0 344.3,296.4 352.6,296.4 352.6,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M344.3,408.0 L344.3,296.4 L352.6,296.4 L352.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_68a" ><title>gnuplot_plot_68a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M344.3,408.0 L344.3,296.4 L352.6,296.4 L352.6,408.0 L344.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_69a" ><title>gnuplot_plot_69a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '352.6,408.0 352.6,408.0 352.6,329.0 360.9,329.0 360.9,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M352.6,408.0 L352.6,329.0 L360.9,329.0 L360.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_70a" ><title>gnuplot_plot_70a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M352.6,408.0 L352.6,329.0 L360.9,329.0 L360.9,408.0 L352.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_71a" ><title>gnuplot_plot_71a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '360.9,408.0 360.9,408.0 360.9,329.0 369.2,329.0 369.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M360.9,408.0 L360.9,329.0 L369.2,329.0 L369.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_72a" ><title>gnuplot_plot_72a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M360.9,408.0 L360.9,329.0 L369.2,329.0 L369.2,408.0 L360.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_73a" ><title>gnuplot_plot_73a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '369.2,408.0 369.2,408.0 369.2,329.0 377.5,329.0 377.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M369.2,408.0 L369.2,329.0 L377.5,329.0 L377.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_74a" ><title>gnuplot_plot_74a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M369.2,408.0 L369.2,329.0 L377.5,329.0 L377.5,408.0 L369.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_75a" ><title>gnuplot_plot_75a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '377.5,408.0 377.5,408.0 377.5,333.6 385.9,333.6 385.9,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M377.5,408.0 L377.5,333.6 L385.9,333.6 L385.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_76a" ><title>gnuplot_plot_76a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M377.5,408.0 L377.5,333.6 L385.9,333.6 L385.9,408.0 L377.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_77a" ><title>gnuplot_plot_77a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '385.9,408.0 385.9,408.0 385.9,384.8 394.2,384.8 394.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M385.9,408.0 L385.9,384.8 L394.2,384.8 L394.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_78a" ><title>gnuplot_plot_78a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M385.9,408.0 L385.9,384.8 L394.2,384.8 L394.2,408.0 L385.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_79a" ><title>gnuplot_plot_79a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '394.2,408.0 394.2,408.0 394.2,366.2 402.5,366.2 402.5,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M394.2,408.0 L394.2,366.2 L402.5,366.2 L402.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_80a" ><title>gnuplot_plot_80a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M394.2,408.0 L394.2,366.2 L402.5,366.2 L402.5,408.0 L394.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_81a" ><title>gnuplot_plot_81a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '402.5,408.0 402.5,408.0 402.5,375.5 410.8,375.5 410.8,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M402.5,408.0 L402.5,375.5 L410.8,375.5 L410.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_82a" ><title>gnuplot_plot_82a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M402.5,408.0 L402.5,375.5 L410.8,375.5 L410.8,408.0 L402.5,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_83a" ><title>gnuplot_plot_83a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '410.8,408.0 410.8,408.0 410.8,398.7 419.1,398.7 419.1,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M410.8,408.0 L410.8,398.7 L419.1,398.7 L419.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_84a" ><title>gnuplot_plot_84a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M410.8,408.0 L410.8,398.7 L419.1,398.7 L419.1,408.0 L410.8,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_85a" ><title>gnuplot_plot_85a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '419.1,408.0 419.1,408.0 419.1,394.1 427.4,394.1 427.4,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M419.1,408.0 L419.1,394.1 L427.4,394.1 L427.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_86a" ><title>gnuplot_plot_86a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M419.1,408.0 L419.1,394.1 L427.4,394.1 L427.4,408.0 L419.1,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_87a" ><title>gnuplot_plot_87a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '427.4,408.0 427.4,408.0 427.4,398.7 435.7,398.7 435.7,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M427.4,408.0 L427.4,398.7 L435.7,398.7 L435.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_88a" ><title>gnuplot_plot_88a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M427.4,408.0 L427.4,398.7 L435.7,398.7 L435.7,408.0 L427.4,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_89a" ><title>gnuplot_plot_89a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '435.7,408.0 435.7,408.0 435.7,403.4 444.0,403.4 444.0,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M435.7,408.0 L435.7,403.4 L444.0,403.4 L444.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_90a" ><title>gnuplot_plot_90a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M435.7,408.0 L435.7,403.4 L444.0,403.4 L444.0,408.0 L435.7,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_91a" ><title>gnuplot_plot_91a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '444.0,408.0 444.0,408.0 444.0,408.0 452.3,408.0 452.3,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)'  d='M444.0,408.0 L452.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_92a" ><title>gnuplot_plot_92a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M444.0,408.0 L452.3,408.0 L444.0,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_93a" ><title>gnuplot_plot_93a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '452.3,408.0 452.3,408.0 452.3,408.0 460.6,408.0 460.6,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 2,4'  d='M452.3,408.0 L460.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_94a" ><title>gnuplot_plot_94a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M452.3,408.0 L460.6,408.0 L452.3,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_95a" ><title>gnuplot_plot_95a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '460.6,408.0 460.6,408.0 460.6,408.0 468.9,408.0 468.9,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 9,4,1,4,1,4'  d='M460.6,408.0 L468.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_96a" ><title>gnuplot_plot_96a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M460.6,408.0 L468.9,408.0 L460.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_97a" ><title>gnuplot_plot_97a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '468.9,408.0 468.9,408.0 468.9,408.0 477.2,408.0 477.2,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 5,8'  d='M468.9,408.0 L477.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_98a" ><title>gnuplot_plot_98a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M468.9,408.0 L477.2,408.0 L468.9,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_99a" ><title>gnuplot_plot_99a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(  0,   0, 128)' points = '477.2,408.0 477.2,408.0 477.2,403.4 485.6,403.4 485.6,408.0 '/>
+	</g>
+	<path stroke='rgb(  0,   0, 128)' stroke-dasharray=' 8,4,2,4'  d='M477.2,408.0 L477.2,403.4 L485.6,403.4 L485.6,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_100a" ><title>gnuplot_plot_100a</title>
+<g style="fill:none; color:white; stroke:rgb(  0,   0, 128); stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M477.2,408.0 L477.2,403.4 L485.6,403.4 L485.6,408.0 L477.2,408.0  '/></g>
+	</g>
+	<g id="gnuplot_plot_101a" ><title>gnuplot_plot_101a</title>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='rgb(  0,   0,   0)'  d='M36.4,408.0 L559.1,408.0  '/></g>
+	</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:0.50; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+</g>
+</svg>
+

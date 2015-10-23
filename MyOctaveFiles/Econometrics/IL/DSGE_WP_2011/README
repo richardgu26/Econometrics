@@ -1,0 +1,25 @@
+This directory contains files to replicate the results in Creel and Kristensen
+"Indirect Likelihood Inference" (the 2011 working paper version) pertaining to
+the fully observed DSGE model. There is a newer version of the paper, which
+has a somewhat more interesting DSGE model, for which example code is also
+available.
+
+These files will create a file of  theta / Z_n  pairs, where theta is the
+parameter of the model and Z_n is the auxiliary statistic. 
+
+Notes:
+1. propagate and runme are executable scripts. They need to be edited to use
+the correct number of MPI ranks. Set this to the total number of cores in your
+cluster, plus 1. Then execute " runme"
+2. there is a line in "runme" for using this on PelicanHPC: uncomment it and
+comment the preceding line, if you're using this on PelicanHPC
+3. you can set the number of replications to draw from the sample
+space and the number of Monte Carlo replications in make_simdata.m
+The default values are very low, to limit the time needed for computations.
+The SBIL estimator will have more bias than what is reported in the paper
+due to the small number of replications of draws from the parameter space.
+Increase this as much as you like, though be aware that it becomes time
+consuming.
+
+For support please write to michael.creel@uab.es
+

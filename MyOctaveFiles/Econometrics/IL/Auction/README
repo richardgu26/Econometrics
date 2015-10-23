@@ -1,0 +1,47 @@
+This directory contains files to replicate the results for the auction model in
+Creel and Kristensen "Indirect Likelihood Inference".
+
+############# SIMPLE VERSIONS ###################
+
+The files Auction_SBIL_Simple.m and Auction_CUII_Simple.m are simple versions
+that are illustrative. The implentation of SBIL will run on plain Matlab or
+Octave. The implementation of CU-II requires the simulated annealing minimizer
+samin (source code samin.cc is provided: compile using mkoctfile samin.cc).
+
+As provided, this will not run on Matlab, though if you substitute a different
+global minimizer, it should run. 
+
+
+############# PRODUCTION VERSIONS ###################
+
+The other files do the same computations on a cluster. Obtaining all of 
+the required software may be tedious, so the simplest way to use this code
+is to run the PelicanHPC Linux distribution, perhaps using virtualization,
+so that it can be used from your normal operating system (e.g., using Virtualbox
+or similar).
+
+You should set up a PelicanHPC cluster as explained in the tutorial before
+using these files. This is needed to create the proper MPI-enabled software
+environment. Just enter "pelican_setup" in a terminal and follow the instructions.
+
+Once that's done, edit runme, and replace the number after "-np" with the
+total number of cores in your cluster, plus 1. 
+
+Then enter "./runme" in a terminal.
+
+When it has finished generating the requested number of replications, it will 
+probably hang, as the code to get nodes to stop is not perfected yet. Just
+enter CTRL-C to force a stop.
+
+To get the estimation results, enter 'octave -q --eval Results' and you'll get SBIL estimation
+results.
+
+The example uses a very small number of draws from the parameter space, so that
+the example runs very quickly. The use of the small number of draws causes the
+SBIL estimator to have worse performance than reported in the paper. Also, the 
+exactly identifying auxiliary statistic works better than the overidentifying
+auxiliary statistic. To get results more like those of the paper,
+edit make_simdata.m and increase reps to a number like one million or so. This
+will still run reasonably quickly.
+
+For support, please write to michael.creel@uab.es

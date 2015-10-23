@@ -1,0 +1,4 @@
+TODO:
+   - record and return iteration history (need to pull information
+     from the internal L-BFGS work arrays -- lbfgs_mex('get')?)
+   - (better) argument checking is lbfgs_mex.c

@@ -1,0 +1,158 @@
+Creel's notes:
+1. The lbfgsb wrapper is by Liam Stewart, licensed GPL 2.0. The lbfgsb code (routines.f) is by Nocedal and co-authors. It is freely available, but use requires citation.
+
+2. Use of lbfgsb requires citation, here are the particulars:
+
+License of Nocedal et al.:
+Condition for Use: This software is freely available, but we expect that all publications describing  work
+using this software , or all commercial products using it, quote at least one of the references given below.
+This software is released under the GNU Public License (GPL)
+
+References
+
+* R. H. Byrd, P. Lu and J. Nocedal. A Limited Memory Algorithm for Bound Constrained Optimization, (1995), SIAM Journal on Scientific and Statistical Computing , 16, 5, pp. 1190-1208.
+* C. Zhu, R. H. Byrd and J. Nocedal. L-BFGS-B: Algorithm 778: L-BFGS-B, FORTRAN routines for large scale bound constrained optimization (1997), ACM Transactions on Mathematical Software, Vol 23, Num. 4, pp. 550 - 560.
+
+3. To install execute "octave --eval install_lbfgsb"
+
+
+
+------------------- Liam Stewart's README ----------------
+
+MATLAB LBFGS wrapper v1.1
+Copyright 2005-2006 Liam Stewart
+http://www.cs.toronto.edu/~liam/software.shtml
+
+
+Requirements
+------------
+
+MATLAB 7 or later is required.
+
+The L-BFGS code is not distributed with the wrapper; it can be obtained from:
+
+  http://www.ece.northwestern.edu/~ciyou/code/lbcode.html
+
+routines.f from the L-BFGS tarball needs to be in the lbfgs directory before
+compilation.
+
+A C compiler and a fortran compiler are required to build the optimization 
+routines and the wrapper. Both compilers must be supported by MATLAB.
+
+This software has been successfully tested on Intel machines running Red Hat
+Linux (using the GNU C and fortran compilers). I have had reports that the
+wrapper can be built and used on Windows. It should work on MacOS X provided 
+that you have a supported fortran compiler (GNU fortran is not supported).
+
+
+Installation
+------------
+
+Unpack this package. Two directories will be created: lbfgs and
+LHSutils. lbfgs contains the lbfgs wrapper; LHSutils contains
+general utility functions needed by the wrapper. Copy the file
+routines.f from the L-BFGS distribution to the lbfgs directory.
+
+To build the mex files, start MATLAB, change to the lbfgs directory, and run
+the install_lbfgs script:
+
+  cd /path/to/lbfgs
+  install_lbfgs
+
+Both the lbfgs and the LHSutils directories should be added to the
+matlab search path (see the path command) in your ~/matlab/startup.m
+scripts.
+
+
+Usage
+-----
+
+See lbfgs.m and test_lbfgs.m.
+
+A user-defined callback function can be passed to the optimization
+function through the options structure. A callback can be used to
+record values during the optimization process or implement special
+visualization routines. With anonymous functions and partial function
+application, it is possible to use callbacks to implement early
+stopping routines based on a validation set (for example, during
+training of machine learning models).
+
+The function is required to have the following signature:
+
+  [stop,ud] = callback(x,iter,state,ud,opts)
+
+where
+  x         current value of the variable being optimized.
+  iter      a structure that contains information about the current
+            iteration. At present this contains the following fields:
+              it - iteration number
+              f  - function value at x
+              g  - gradient at x
+  state     a string describing where the optimization function is. It
+            may be one of the following:
+              init - the optimization process has yet to start
+              iter - one iteration has finished
+              done - the optimization process has finished
+  ud        user data. This is an arbitrary structure that the
+            callback can user to store information. For example, the
+            function may choose to store a history of the function
+            values. When state is 'iter', the user data is an empty
+            matrix. The function can initialize the structure as it
+            sees fit. The contents are maintained between calls as
+            the callback returns the user data, which the wrapper
+            uses as the user data argument the next time the callback
+            is called.
+  opts      the options structure. It can be used by the optimization
+            process for any purpose (eg. allocation enough space to
+            hold the a complete history of function values).
+  stop      indicates whether or not to stop the optimization
+            process. A non-zero value indicates that optimization
+            should be halted. A callback can use this to stop
+            optmization early.
+
+The callback function is called exactly once before optimization is
+started (state = 'init'), a number of times during optimization, once
+per iteration (state = 'iter'), and exactly once before the wrapper
+returns (state = 'done').
+
+
+Changes
+-------
+Version 1.1:
+  - Added ability to provide a user callback function.
+  - Included missing files assert.m and process_options.m in distribution.
+  - Included rosenbrock.m file.
+
+Version 1.0:
+  - Initial release.
+
+
+License
+-------
+
+The MATLAB LBFGS wrapper is distributed under the GNU GPL. See the file
+COPYING for details.
+
+The function rosenbrock.m is copyright Carl Rasmussen and is distributed
+under the following license:
+
+(C) Copyright 1999, 2000, 2001 & 2002, Carl Edward Rasmussen
+
+Permission is granted for anyone to copy, use, or modify these
+programs and accompanying documents for purposes of research or
+education, provided this copyright notice is retained, and note is
+made of any changes that have been made.
+
+These programs and documents are distributed without any warranty,
+express or implied.  As the programs were written for research
+purposes only, they have not been tested to the degree that would be
+advisable in any important application.  All use of these programs is
+entirely at the user's own risk.
+
+
+Contact Information
+-------------------
+
+Liam Stewart
+liam@cs.toronto.edu
+http://www.cs.toronto.edu/~liam

@@ -1,0 +1,13 @@
+rm -R -f EstimateRBC_ML
+rm -R -f EstimateRBC_ML_*
+rm -R -f EstimateRBC_ML.m
+rm -R -f EstimateRBC_Bayesian
+rm -R -f EstimateRBC_Bayesian_*
+rm -R -f EstimateRBC_Bayesian.m
+rm -R -f rbc_*
+rm *.log
+rm *.mat
+rm *.dat
+if [ -f octave-core ]; then
+	rm octave-core
+fi

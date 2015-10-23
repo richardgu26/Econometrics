@@ -1,0 +1,7 @@
+# run this with first mpirun line uncommented to get draws at design, CTRL-C to break when done
+# then comment first mpirun line, uncomment the second, and re-run
+
+#!/bin/bash
+#mpirun -x LD_PRELOAD='libmpi.so' -np 5  octave -q --eval "outsamp = 1; outfile = 'simdata.320'; n = 320; reps = 5000; n_pooled = 100; make_simdata"
+mpirun -x LD_PRELOAD='libmpi.so' -np 5  octave -q --eval "outsamp = 0; outfile = 'simdata.320'; n = 320; reps = 2000000; n_pooled = 1000; make_simdata"
+

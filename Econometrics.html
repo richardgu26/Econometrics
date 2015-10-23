@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252"
+      http-equiv="content-type">
+    <title>Econometrics Notes</title>
+    <meta content="Michael Creel" name="author">
+  </head>
+  <body>
+    <img style=" width: 460px; height: 178px;" alt="" src="logoUAB.jpg"><br>
+    <br>
+    <br>
+    <img style=" width: 704px; height: 440px;" alt="" src="notes.png"><br>
+    <br>
+    This page contains information about <a
+      href="http://pareto.uab.es/mcreel/">Michael Creel</a>'s graduate
+    level econometrics notes. There are a couple of unusual thing about
+    these notes:<br>
+    <ul>
+      <li>they are available in editable form, so that you can modify
+        them to suit your needs. They are however copyrighted, so you
+        should learn about the <a
+          href="http://www.gnu.org/licenses/gpl.html">GPL</a> before
+        modifying and distributing them.<br>
+      </li>
+      <li>they contain links that point to <a
+          href="http://pareto.uab.es/mcreel/Econometrics/Examples">example
+
+
+
+
+
+
+
+
+
+          programs</a> using the <a href="http://www.octave.org/">Octave</a>
+        matrix programming language. Octave sometimes gets little
+        respect as a language for econometrics, with allegations that it
+        is slow compared to Matlab, etc. A couple of points:</li>
+      <ul>
+        <li>for plain Octave, these allegations are true, in some
+          respects at least<br>
+        </li>
+        <li>Octave is free, and it runs on all popular operating systems<br>
+        </li>
+        <li>plain Octave is perfectly good for ordinary econometrics of
+          the sort that most students and many researchers need to do</li>
+        <li>Octave can easily be linked to parallel matrix algebra
+          libraries so that it uses all cores of a computer. Plain
+          Octave doesn't do that by default.<br>
+        </li>
+        <li>Octave can be compiled using proprietary compilers, if you
+          have them.<br>
+        </li>
+        <li>it is easy to use C++ code for bottlenecks. For serious
+          research work on computationally demanding problems, this step
+          is fundamental<br>
+        </li>
+        <li>it is easy to use OpenMP or MPI to use Octave for parallel
+          computing. This can have a great performance effect, and your
+          code is free and portable.</li>
+        <li>if you use these methods, you can get very good performance
+          with Octave.<br>
+        </li>
+      </ul>
+      <li>&nbsp;There are examples for stuff like OLS, ML, etc., but
+        there is also working (GPL'd) code for&nbsp;nonparametric
+        methods, simulation-based estimation methods, estimation of DSGE
+        models, and parallel programming applications in econometrics.
+        The examples make use of some other code for GNU Octave that I
+        have written - minimizers and other stuff, <a
+          href="http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles">available
+
+
+
+
+
+
+
+
+
+          here</a>.<br>
+      </li>
+      <li>the example programs together with data and all needed
+        software are on the accompanying <a
+          href="http://pareto.uab.es/mcreel/Econometrics/econometrics.iso">econometrics.iso</a>
+        image. This is an ISO image which can be used to boot a
+        computer, but which is more easily used to boot a virtual
+        computer, running under your usual operating system. This works
+        with all of the popular operating systems. Using this method,
+        you can be running the examples in very little time, without the
+        hassle of installing a lot of software.<br>
+      </li>
+    </ul>
+    You may be wondering why the notes are available in this form. It's
+    simply because I use a lot of free software, and this is a means of
+    contributing back to the community. Also, I'm hoping to receive
+    error corrections and contributions from users of the notes.<br>
+    <br>
+    <span style="font-weight: bold;">Downloads</span>:<br>
+    <ul>
+      <li>the <a
+          href="http://econpapers.repec.org/paper/aubautbar/575.03.htm">notes</a>,
+        in pdf form.</li>
+      <li>all of the sources for the notes and examples are directly
+        available <a
+          href="http://pareto.uab.es/mcreel/Econometrics/Econometrics.tgz">here</a>
+        (gzipped tar file) and <a
+          href="http://pareto.uab.es/mcreel/Econometrics/Econometrics.zip">here</a>
+        (zip file). To run the examples, you need to have Octave
+        installed. To edit the notes, you need to install LyX.</li>
+      <li><a
+          href="http://pareto.uab.es/mcreel/Econometrics/econometrics.iso">econometrics.iso</a>
+        (about 1.3GB) contains the notes and all the <a
+          href="http://pareto.uab.es/mcreel/Econometrics/Examples">examples</a>,
+        ready to run. You don't need to install anything to use it
+        (except a virtualization platform, if you don't have one
+        installed). I test the image using <a
+          href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a>,
+        which is a free download for Windows, MacOS, and Linux. There is
+        an appliance <a
+          href="http://pareto.uab.es/mcreel/Econometrics/econometrics.ova">econometrics.ova</a>.
+        To use the ISO image in a virtual machine, import the .ova
+        appliance file into Virtualbox, then in Settings, make the
+        Storage-&gt;IDE controller point to the location where you have
+        save the econometrics.iso file. If you would like the scripts
+        used to build this image, they are <a
+          href="http://pareto.uab.es/mcreel/Econometrics/EconometricsISO.tgz">here</a>
+      </li>
+    </ul>
+    A bit more detail: The notes are written using the <a
+      href="http://www.lyx.org/">LyX</a> word processor, which allows
+    export to LaTeX. The document is about 500 pages. Coverage is&nbsp;
+    2 semesters of econometric theory, emphasizing models for stationary
+    data. <br>
+  </body>
+</html>

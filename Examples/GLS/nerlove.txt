@@ -1,0 +1,73 @@
+gretl: gui client for gretl version 1.2.9,
+copyright Allin Cottrell.
+This is free software with ABSOLUTELY NO WARRANTY.
+Current session: 2004/09/22 11:58
+Output from /home/mcreel/Econometrics/Include/GLS/nerlove.gretl
+gretl version 1.2.9
+Current session: 2004/09/22 11:58
+? open /usr/share/gretl/data/misc/klein.gdt
+? genr W = Wp+Wg
+Replaced vector W (ID 10)
+? lags P
+Listing 12 variables:
+  0) const       1) C           2) P           3) Wp          4) I         
+  5) K1          6) X           7) Wg          8) G           9) T         
+ 10) W          11) P_1       
+
+? ols C const P P_1 W
+
+Model 1: OLS estimates using the 21 observations 1921-1941
+Dependent variable: C
+
+      VARIABLE      COEFFICIENT        STDERROR       T STAT   2Prob(t > |T|)
+
+   0)    const        16.2366             1.30270      12.464   < 0.00001 ***
+   2)        P         0.192934           0.0912102     2.115    0.049474 **
+  11)      P_1         0.0898849          0.0906479     0.992    0.335306
+  10)        W         0.796219           0.0399439    19.933   < 0.00001 ***
+
+  Mean of dependent variable = 53.9952
+  Standard deviation of dep. var. = 6.86087
+  Sum of squared residuals = 17.8794
+  Standard error of residuals = 1.02554
+  Unadjusted R-squared = 0.981008
+  Adjusted R-squared = 0.977657
+  F-statistic (3, 17) = 292.708 (p-value < 0.00001)
+  Durbin-Watson statistic = 1.36747
+  First-order autocorrelation coeff. = 0.2463
+
+  MODEL SELECTION STATISTICS
+
+  SGMASQ        1.05173     AIC           1.24618     FPE           1.25206
+  HQ            1.30117     SCHWARZ       1.52050     SHIBATA       1.17575
+  GCV           1.29920     RICE          1.37534
+
+Excluding the constant, p-value was highest for variable 11 (P_1)
+
+
+(* commands pertaining to model 1 *)
+? lmtest  1 --autocorr
+
+Breusch-Godfrey test for first-order autocorrelation
+OLS estimates using the 20 observations 1922-1941
+Dependent variable: uhat
+
+      VARIABLE      COEFFICIENT        STDERROR       T STAT   2Prob(t > |T|)
+
+   0)    const         1.16985            1.69829       0.689    0.501440
+   2)        P         0.00150143         0.0930157     0.016    0.987334
+  11)      P_1         0.00678953         0.0926178     0.073    0.942530
+  10)        W        -0.0316448          0.0494080    -0.640    0.531524
+  13)   uhat_1         0.385415           0.347390      1.109    0.284702
+
+  Unadjusted R-squared = 0.0769536
+
+
+Test statistic: LMF = 1.250537,
+with p-value = P(F(1,15) > 1.25054) = 0.281
+
+Alternative statistic: TR^2 = 1.539072,
+with p-value = P(Chi-square(1) > 1.53907) = 0.215
+
+Ljung-Box Q' = 1.0806 with p-value = P(Chi-square(1) > 1.0806) = 0.299
+Script done

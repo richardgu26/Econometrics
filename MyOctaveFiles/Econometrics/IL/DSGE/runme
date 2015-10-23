@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# get rid of any zombie octaves from prior runs
+killall octave
+
+# make copies of model files to use multiple cores/cluster
+./propagate
+sync
+
+# this is to run on your own machine: change -np 2 to -np X, where X is number of cores plus 1
+# first the point at the Monte Carlo design
+mpirun -x LD_PRELOAD='libmpi.so' -np 5 octave -q --eval "outsamp = 1; reps = 20; outfile = 'simdata_d'; make_simdata; quit"
+# next the points from the parameter space (increase reps for more reliable results)
+mpirun -x LD_PRELOAD='libmpi.so' -np 5 octave -q --eval "outsamp = 0; reps = 100; outfile = 'simdata_p'; make_simdata; quit"
+
+# uncomment the next lines to run on PelicanHPC
+# dsh -f /home/user/tmp/bhosts sync
+# mpirun -x LD_PRELOAD='libmpi.so' -np 2 --hostfile /home/user/tmp/bhosts  octave -q --eval make_simdata
+
+
+# clean up the dynare files
+./cleanup
+
+# see the estimation results after doing simulations
+octave --eval Results

@@ -1,0 +1,6 @@
+#!/bin/bash
+./propagate
+mpirun -np 5 -x LD_PRELOAD='libmpi.so' octave -q --eval make_simdata
+#mpirun -np 5 -x LD_PRELOAD='libmpi.so' --hostfile /home/user/tmp/bhosts octave -q --eval make_simdata
+./cleanup
+octave -q --eval Results

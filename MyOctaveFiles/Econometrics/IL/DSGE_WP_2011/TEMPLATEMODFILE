@@ -1,0 +1,75 @@
+% Basic RBC Model with Monopolistic Competion.
+%
+% Jesus Fernandez-Villaverde
+% Philadelphia, March 3, 2005
+%----------------------------------------------------------------
+% 0. Housekeeping
+%----------------------------------------------------------------
+
+close all
+
+%----------------------------------------------------------------
+% 1. Defining variables
+%----------------------------------------------------------------
+
+var y c k i l y_l w r  z;
+varexo e;
+parameters beta psi delta alpha rho sigma epsilon, mu, omega, phi;
+load parameterfile1;
+set_param_value('beta',beta)
+set_param_value('psi',psi)
+set_param_value('delta',delta)
+set_param_value('alpha',alpha)
+set_param_value('rho',rho)
+set_param_value('sigma',sigma)
+set_param_value('epsilon',epsilon)
+phi =((1/alpha)*((1/beta)-1+delta))^(1/(1-alpha));
+omega = phi^(1-alpha) - delta;
+mu = (1/psi)*(1-alpha)*(phi^(-alpha));
+set_param_value('mu',mu)
+set_param_value('omega',omega)
+set_param_value('phi',phi)
+
+
+%----------------------------------------------------------------
+% 3. Model
+%----------------------------------------------------------------
+
+model(use_dll);
+  (1/c) = beta*(1/c(+1))*(1+r(+1)-delta);
+  psi*c/(1-l) = w;
+  c+i = y;
+  y = (k(-1)^alpha)*(exp(z)*l)^(1-alpha);
+  w = y*((epsilon-1)/epsilon)*(1-alpha)/l;
+  r = y*((epsilon-1)/epsilon)*alpha/k;
+  i = k-(1-delta)*k(-1);
+  y_l = y/l;
+  z = rho*z(-1)+e;
+end;
+
+%----------------------------------------------------------------
+% 4. Computation
+%----------------------------------------------------------------
+
+initval;
+  k = mu/(omega + phi*mu);
+  c = omega*k;
+  l = phi*k;
+  y = (k^alpha)*(l^(1-alpha));
+  w = (1-alpha)*(y/l)*(epsilon-1)/epsilon;
+  r = alpha*(y/k)*(epsilon-1)/epsilon;
+  z = 0;
+  e = 0;
+end;
+
+shocks;
+var e = sigma^2;
+end;
+
+steady;
+load state1;
+s = round(s(1)/s(2)*sum(s));
+set_dynare_seed(s);
+stoch_simul(nograph, noprint, ar=2, order=3, periods=180, drop=100);
+#datatomfile('simuldataRBC',[]);
+#return;

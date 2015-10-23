@@ -1,0 +1,20 @@
+MPITB extensions found
+
+
+******************************************************
+Example of GMM estimation of rational expectations model
+
+GMM Estimation Results
+BFGS convergence: Normal convergence
+
+Objective function value: 0.000014
+Observations: 94
+
+               Value          df     p-value  
+X^2 test       0.001       1.000       0.971
+
+         estimate     st. err      t-stat     p-value  
+beta        0.915       0.009      97.271       0.000
+gamma       0.569       0.319       1.783       0.075
+******************************************************
+

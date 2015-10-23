@@ -1,0 +1,54 @@
+GNU Octave, version 2.1.71 (i486-pc-linux-gnu).
+Copyright (C) 2005 John W. Eaton.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+Welcome to MPITB
+
+*******************************************************
+Restricted LS estimation results
+Observations 145
+R-squared 0.958822
+Sigma-squared 0.110978
+
+            estimate     st.err.     t-stat.     p-value  
+constant      -1.046       1.556      -0.672       0.503
+output         0.391       0.047       8.361       0.000
+labor          0.007       0.253       0.026       0.979
+fuel           0.498       0.092       5.437       0.000
+capital       -0.460       0.294      -1.561       0.122
+constant      -1.977       1.805      -1.095       0.276
+output         0.649       0.160       4.066       0.000
+labor          0.007       0.253       0.026       0.979
+fuel           0.498       0.092       5.437       0.000
+capital       -0.460       0.294      -1.561       0.122
+constant      -3.616       2.753      -1.313       0.192
+output         0.897       0.322       2.785       0.006
+labor          0.007       0.253       0.026       0.979
+fuel           0.498       0.092       5.437       0.000
+capital       -0.460       0.294      -1.561       0.122
+constant      -4.052       2.675      -1.515       0.133
+output         0.962       0.297       3.236       0.002
+labor          0.007       0.253       0.026       0.979
+fuel           0.498       0.092       5.437       0.000
+capital       -0.460       0.294      -1.561       0.122
+constant      -5.308       1.918      -2.767       0.007
+output         1.101       0.143       7.687       0.000
+labor          0.007       0.253       0.026       0.979
+fuel           0.498       0.092       5.437       0.000
+capital       -0.460       0.294      -1.561       0.122
+
+*******************************************************
+                   Value     p-value  
+White's test      61.903       0.000
+              Value     p-value  
+GQ test      10.886       0.000

@@ -1,0 +1,18 @@
+
+*********************************************************
+OLS estimation results
+Observations 145
+R-squared 0.925955
+Sigma-squared 0.153943
+
+Results (Ordinary var-cov estimator)
+
+            estimate     st.err.     t-stat.     p-value  
+constant      -3.527       1.774      -1.987       0.049
+output         0.720       0.017      41.244       0.000
+labor          0.436       0.291       1.499       0.136
+fuel           0.427       0.100       4.249       0.000
+capital       -0.220       0.339      -0.648       0.518
+
+*********************************************************
+

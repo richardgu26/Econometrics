@@ -1,0 +1,29 @@
+MPITB extensions found
+
+OBDV
+
+
+******************************************************
+Poisson model, MEPS 1996 full data set
+
+MLE Estimation Results
+BFGS convergence: Normal convergence
+
+Average Log-L: -3.671090
+Observations: 4564
+
+              estimate     st. err      t-stat     p-value  
+constant        -0.791       0.149      -5.290       0.000
+pub. ins.        0.848       0.076      11.093       0.000
+priv. ins.       0.294       0.071       4.137       0.000
+sex              0.487       0.055       8.797       0.000
+age              0.024       0.002      11.471       0.000
+edu              0.029       0.010       3.061       0.002
+inc             -0.000       0.000      -0.978       0.328
+
+Information Criteria 
+CAIC : 33575.6881      Avg. CAIC:   7.3566
+ BIC : 33568.6881       Avg. BIC:   7.3551
+ AIC : 33523.7064       Avg. AIC:   7.3452
+******************************************************
+

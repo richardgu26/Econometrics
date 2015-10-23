@@ -1,0 +1,24 @@
+octave:1> collinearity
+
+Contribution received from node 0.  Received so far: 500
+
+Contribution received from node 0.  Received so far: 1000
+
+correlation between x2 and x3: 0.900000
+
+descriptive statistics for 1000 OLS replications
+      mean  st. dev.       min       max
+     0.996     0.182     0.395     1.574
+     0.996     0.444    -0.463     2.517
+     1.008     0.436    -0.342     2.301
+descriptive statistics for 1000 OLS replications, dropping x3
+      mean  st. dev.       min       max
+     0.999     0.198     0.330     1.696
+     1.905     0.207     1.202     2.651
+descriptive statistics for 1000 Restricted OLS replications, b2=b3
+      mean  st. dev.       min       max
+     0.998     0.179     0.433     1.574
+     1.002     0.096     0.663     1.339
+     1.002     0.096     0.663     1.339
+octave:2>
+

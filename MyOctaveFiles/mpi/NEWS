@@ -1,0 +1,25 @@
+Summary of changes for mpi 1.2.0:
+-------------------------------------------------------------------
+
+ * Changed Makefile to allow specifying MPI compile and link options
+   via environment variables.
+
+ * Fixed a memory leak bug.
+
+Summary of changes for mpi 1.1.1:
+-------------------------------------------------------------------
+
+ * Package name changed.
+
+ * Patched the MPI_(I)Probe function that was incompatible with newer versions of openmpi.
+
+ * This version of the package should work with distributions of mpi other than openmpi,
+   not testing has been done yet, though.
+
+Summary of changes for openmpi_ext 1.1.0:
+-------------------------------------------------------------------
+
+ * Added help text and demos in all example scripts
+
+ * Code clean-up and standardization, and some bug-fixes
+

@@ -1,0 +1,2964 @@
+#LyX 1.6.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+An Introduction to Parallel Computing in Econometrics
+\begin_inset OptArg
+status open
+
+\begin_layout Plain Layout
+Parallel econometrics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Michael Creel 
+\end_layout
+
+\begin_layout Institute
+Universitat Autònoma de Barcelona
+\end_layout
+
+\begin_layout Date
+Master en Economia de la Empresa y Metodos Cuantitativos, UC3M, April 2008
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+What this presentation does:
+\end_layout
+
+\begin_layout Itemize
+The purpose of this presentation (in 3 two hour sessions) is to explain
+ enough basic concepts and to provide enough examples so that students are
+ able to:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+run parallel code of interest to economists 
+\end_layout
+
+\begin_layout Itemize
+create their own cluster
+\end_layout
+
+\begin_layout Itemize
+write new parallel code for basic econometric methods
+\end_layout
+
+\begin_layout Itemize
+know where to look for more information
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+a link to this presentation is on my homepage (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/
+\end_layout
+
+\end_inset
+
+) in the 
+\begin_inset Quotes eld
+\end_inset
+
+presentations
+\begin_inset Quotes erd
+\end_inset
+
+ section
+\end_layout
+
+\begin_layout BeginPlainFrame
+A disclaimer
+\end_layout
+
+\begin_layout Itemize
+the presentation is strongly derivative of my own work, and does not make
+ much effort to explain alternatives.
+\end_layout
+
+\begin_layout Itemize
+This is certainly a biased and narrow perspective.
+ The only justification is that time is limited, and I am able to make these
+ examples work.
+\end_layout
+
+\begin_layout Itemize
+There very well may be better ways to do some of this, though I do believe
+ that what I present is the fastest and easiest way to get started.
+\end_layout
+
+\begin_layout BeginFrame
+Outline
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parallel computing: general concepts
+\end_layout
+
+\begin_layout BeginPlainFrame
+What is parallel computing?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/bill.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+What is parallel computing (2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://computing.llnl.gov/tutorials/parallel_comp/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Share work to get it done faster
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Share the work
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Share-the-work"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/picture1.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+Some factors affect the performance of a parallelized version
+\end_layout
+
+\begin_layout Itemize
+how much of the work is blue/green?
+\end_layout
+
+\begin_layout Itemize
+how much communication overhead is introduced? 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+there may be different ways to parallelize an application, that lead to
+ different amounts of communications overhead.
+ 
+\end_layout
+
+\begin_layout Itemize
+making a good parallelized application often requires understanding both
+ the application and the technology for parallelization.
+ A single person who understands both will probably do a better job than
+ 2 people who each understand one of the parts.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/picture1.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Amdahl's Law
+\end_layout
+
+\begin_layout Standard
+In the case of parallelization, Amdahl's law states that if 
+\begin_inset Formula $P$
+\end_inset
+
+ is the proportion of a program that can be made parallel (i.e.
+ benefit from parallelization), and 
+\begin_inset Formula $(1-P)$
+\end_inset
+
+ is the proportion that cannot be parallelized (remains serial - the green
+ in the previous figure) then the maximum speedup that can be achieved by
+ using 
+\begin_inset Formula $N$
+\end_inset
+
+ processors is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{(1-P)+\frac{P}{N}}\]
+
+\end_inset
+
+In the limit, as 
+\begin_inset Formula $N$
+\end_inset
+
+ tends to infinity, the maximum speedup tends to 
+\begin_inset Formula $1/(1-P)$
+\end_inset
+
+.
+ In practice, performance/price falls rapidly as 
+\begin_inset Formula $N$
+\end_inset
+
+ is increased once there is even a small component of 
+\begin_inset Formula $(1-P)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+source: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Amdahl's_law
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Amdahl's Law (2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/AmdahlsLaw.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+source: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Amdahl's_law
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Multiple cores, clusters, and grids
+\end_layout
+
+\begin_layout Itemize
+There are many ways to do parallel computing.
+ A general overview is here: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Parallel_computing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We'll focus on multiple cores and clusters 
+\end_layout
+
+\begin_layout Itemize
+Grids could also be used for econometrics, but this is outside the scope
+ of this course.
+ A grid is a large group of heterogeneous machines that don't trust eachother.
+ They share CPU capacity when it is available.
+ There is no guarantee that resources will be available on any specific
+ machine at any particular time.
+ seti@home or folding@home are wll known examples.
+ A promising project that used virtual machines is 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.grid-appliance.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Multiple cores
+\end_layout
+
+\begin_layout Itemize
+A multi-core CPU has two or more cores, which essentially act as separate
+ CPUs
+\end_layout
+
+\begin_layout Itemize
+tasks will ordinarily run on a single core
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+run the sorry1core.m example and use htop to show that only 1 core is used
+ while running a matrix inversion loop in octave
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Using more than 1 core requires specialized methods, such as multi-threading.
+ Much currently available software will not use threads, so will run on
+ only one core.
+ Newer software will certainly start to use threads more widely.
+\end_layout
+
+\begin_layout Itemize
+using only 1 core to crunch numbers is very annoying if you have 3 other
+ mostly idle cores (quad core example)
+\end_layout
+
+\begin_layout BeginPlainFrame
+High performance computing clusters
+\end_layout
+
+\begin_layout Itemize
+A HPC cluster is a set of computers connected with a reasonably high speed
+ networking technology, 
+\emph on
+that are prepared to work together to solve a given task
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+The goal is to finish the given task more quickly by sharing the work using
+ parallel computing methods.
+\end_layout
+
+\begin_layout Itemize
+Working together on a problem means that the same data and software must
+ be available to each node in the cluster.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ensuring that this is the case is not always easy, especially as the cluster
+ ages
+\end_layout
+
+\begin_layout Itemize
+shared filesystems that reside on a single server is one way to syncronize
+ the nodes
+\end_layout
+
+\begin_layout Itemize
+installing and maintaining a cluster is usually a nontrivial job
+\end_layout
+
+\begin_layout Itemize
+if you use commercial software, license fees can be very expensive if you
+ use many nodes
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Opportunities for parallelization in econometrics
+\end_layout
+
+\begin_layout BeginPlainFrame
+Parallel computing and econometrics
+\end_layout
+
+\begin_layout Standard
+Not the only source, but a good place to start (gives references):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/ce_paper
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+How to parallelize a nonlinear estimation routine?
+\end_layout
+
+\begin_layout Standard
+Let's consider a paradigmatic problem in econometrics: estimation of the
+ parameter of a nonlinear model.
+ Supposing we're trying to minimize 
+\begin_inset Formula $s_{n}(\theta).$
+\end_inset
+
+ Take a second order Taylor's series approximation of 
+\begin_inset Formula $s_{n}(\theta)$
+\end_inset
+
+ about 
+\begin_inset Formula $\theta^{k}$
+\end_inset
+
+ (an initial guess).
+ 
+\begin_inset Formula \[
+s_{n}(\theta)\approx s_{n}(\theta^{k})+g(\theta^{k})^{\prime}\left(\theta-\theta^{k}\right)+1/2\left(\theta-\theta^{k}\right)^{\prime}H(\theta^{k})\left(\theta-\theta^{k}\right)\]
+
+\end_inset
+
+To attempt to minimize 
+\begin_inset Formula $s_{n}(\theta),$
+\end_inset
+
+ we can minimize the portion of the right-hand side that depends on 
+\begin_inset Formula $\theta,$
+\end_inset
+
+ 
+\emph on
+i.e.
+\emph default
+, we can minimize 
+\begin_inset Formula \[
+\tilde{s}(\theta)=g(\theta^{k})^{\prime}\theta+1/2\left(\theta-\theta^{k}\right)^{\prime}H(\theta^{k})\left(\theta-\theta^{k}\right)\]
+
+\end_inset
+
+with respect to 
+\begin_inset Formula $\theta.$
+\end_inset
+
+ This is a much easier problem, since it is a quadratic function in 
+\begin_inset Formula $\theta,$
+\end_inset
+
+ so it has linear first order conditions.
+ These are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D_{\theta}\tilde{s}(\theta)=g(\theta^{k})+H(\theta^{k})\left(\theta-\theta^{k}\right)\]
+
+\end_inset
+
+ So the solution for the next round estimate is 
+\begin_inset Formula \[
+\theta^{k+1}=\theta^{k}-H(\theta^{k})^{-1}g(\theta^{k})\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+How to parallelize it?
+\end_layout
+
+\begin_layout Itemize
+parallelize the gradient calculation over the parameters? If 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is 
+\begin_inset Formula $k$
+\end_inset
+
+ dimensional, we could use up to 
+\begin_inset Formula $2k+1$
+\end_inset
+
+ computers to calculate a central difference gradient
+\end_layout
+
+\begin_layout Itemize
+use a parallel search algorithm to find the best step size?
+\end_layout
+
+\begin_layout Itemize
+these ideas work, but poorly.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+why?
+\end_layout
+
+\begin_layout Itemize
+because they generate much inter-node communication.
+ The yellow areas in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Share-the-work"
+
+\end_inset
+
+ become large, and the speedup is small.
+\end_layout
+
+\begin_layout Itemize
+you can't use more than 
+\begin_inset Formula $2k+1$
+\end_inset
+
+ computational cores.
+\end_layout
+
+\end_deeper
+\begin_layout BeginPlainFrame
+Econometric models use data
+\end_layout
+
+\begin_layout Standard
+this provides a simple and natural way to parallelize: do calculations on
+ different blocks of data on different computers
+\end_layout
+
+\begin_layout BeginPlainFrame
+MLE
+\end_layout
+
+\begin_layout Standard
+For a sample 
+\begin_inset Formula $\left\{ (y_{t},x_{t})\right\} _{n}$
+\end_inset
+
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+ observations of a set of dependent and explanatory variables, the maximum
+ likelihood estimator of the parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ can be defined as 
+\begin_inset Formula \[
+\hat{\theta}=\arg\max s_{n}(\theta)\]
+
+\end_inset
+
+where
+\begin_inset Formula \[
+s_{n}(\theta)=\frac{1}{n}\sum_{t=1}^{n}\ln f(y_{t}|x_{t},\theta)\]
+
+\end_inset
+
+Here, 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ may be a vector of random variables, and the model may be dynamic since
+ 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ may contain lags of 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout BeginPlainFrame
+MLE, continued
+\end_layout
+
+\begin_layout Standard
+As Swann (2002) points out, this can be broken into sums over blocks of
+ observations, for example two blocks:
+\begin_inset Formula \[
+s_{n}(\theta)=\frac{1}{n}\left\{ \left(\sum_{t=1}^{n_{1}}\ln f(y_{t}|x_{t},\theta)\right)+\left(\sum_{t=n_{1}+1}^{n}\ln f(y_{t}|x_{t},\theta)\right)\right\} \]
+
+\end_inset
+
+Analogously, we can define up to 
+\begin_inset Formula $n$
+\end_inset
+
+ blocks.
+ Again following Swann, parallelization can be done by calculating each
+ block on separate computers.
+\end_layout
+
+\begin_layout BeginPlainFrame
+GMM
+\end_layout
+
+\begin_layout Standard
+For a sample as above, the GMM estimator of the parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ can be defined as
+\begin_inset Formula \[
+\hat{\theta}\equiv\arg\min_{\Theta}s_{n}(\theta)\]
+
+\end_inset
+
+where 
+\begin_inset Formula \[
+s_{n}(\theta)=m_{n}(\theta)^{\prime}W_{n}m_{n}(\theta)\]
+
+\end_inset
+
+ and 
+\begin_inset Formula \[
+m_{n}(\theta)=\frac{1}{n}\sum_{t=1}^{n}m_{t}(y_{t}|x_{t},\theta)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+GMM, continued
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $m_{n}(\theta)$
+\end_inset
+
+ is an average, it can obviously be computed blockwise, using for example
+ 2 blocks:
+\begin_inset Formula \[
+m_{n}(\theta)=\frac{1}{n}\left\{ \left(\sum_{t=1}^{n_{1}}m_{t}(y_{t}|x_{t},\theta)\right)+\left(\sum_{t=n_{1}+1}^{n}m_{t}(y_{t}|x_{t},\theta)\right)\right\} \]
+
+\end_inset
+
+Likewise, we may define up to 
+\begin_inset Formula $n$
+\end_inset
+
+ blocks, each of which could potentially be computed on a different machine.
+\end_layout
+
+\begin_layout BeginPlainFrame
+Data parallelism
+\end_layout
+
+\begin_layout Itemize
+The idea of performing the same computations on different parts of a data
+ set is known as 
+\emph on
+data parallelism
+\emph default
+, and it is a well-known strategy for parallelization.
+\end_layout
+
+\begin_layout Itemize
+See 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+since we always use data in econometrics, this is a natural place to start
+ thinking about how to parallelize our work.
+\end_layout
+
+\begin_layout BeginPlainFrame
+Monte Carlo fits a job-based framework
+\end_layout
+
+\begin_layout Itemize
+A Monte Carlo study involves repeating a random experiment many times under
+ identical conditions.
+ Several authors have noted that Monte Carlo studies are obvious candidates
+ for parallelization (Doornik 
+\emph on
+et al.
+
+\emph default
+ 2002; Bruche, 2003) since blocks of replications can be done independently
+ on different computers.
+\end_layout
+
+\begin_layout Itemize
+Job-based parallelism is the idea of executing independent parts of an overall
+ computation on different CPUs.
+ See 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Task
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Monte Carlo, continued
+\end_layout
+
+\begin_layout Itemize
+if we need 1000 Monte Carlo replications, we can do half on one computer
+ and half on another
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+it would be nice to have a convenient way of organizing this
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+use many computers
+\end_layout
+
+\begin_layout Itemize
+centralized reporting of results
+\end_layout
+
+\begin_layout Itemize
+recovery if some particular computer fails or crashes
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout BeginPlainFrame
+The is more than 1 way to think about this, and there is more than 1 thing
+ to think about
+\end_layout
+
+\begin_layout Itemize
+the concepts of data parallelism and job-parallelism are not entirely separate.
+ A real problem usually has elements of each.
+\end_layout
+
+\begin_layout Itemize
+The important thing is to think carefully about your problem to find the
+ best way to parallelize it
+\end_layout
+
+\begin_layout Itemize
+what does 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ mean? There are a number of competing factors:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+code that runs fast
+\end_layout
+
+\begin_layout Itemize
+code that is easy to write and maintain
+\end_layout
+
+\begin_layout Itemize
+code that can be re-used
+\end_layout
+
+\begin_layout Itemize
+code that is easy enough to understand so that other econometricians can
+ use it
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+experience is a good guide, but the only way to get it is to make some mistakes
+\end_layout
+
+\begin_layout BeginPlainFrame
+Advantages and drawbacks of parallel computing
+\end_layout
+
+\begin_layout Itemize
+parallelized code is obviously more difficut to write than normal serial
+ code.
+ This will become clear soon.
+\end_layout
+
+\begin_layout Itemize
+new compilers may automatically parallelize part of code to use multiple
+ core CPUs
+\end_layout
+
+\begin_layout Itemize
+many (most?) interesting research problems are not so computationally demanding
+ so as to require parallel computing
+\end_layout
+
+\begin_layout Itemize
+however, once you know how to use parallel computing, maybe your idea of
+ what is a feasible and interesting research project might change.
+ The tools we have influence the research agenda.
+\end_layout
+
+\begin_layout BeginPlainFrame
+Some speedup results
+\end_layout
+
+\begin_layout Standard
+Taken from Michael Creel 
+\begin_inset Quotes eld
+\end_inset
+
+User-Friendly Parallel Computations with Econometric Examples
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph on
+Computational Economics
+\emph default
+, 2005, vol.
+ 26, issue 2, pages 107-128 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/speedup.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Speedup for kernel regression
+\end_layout
+
+\begin_layout Standard
+The Nadaraya-Watson kernel regression estimator of a function 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ at a point 
+\begin_inset Formula $x$
+\end_inset
+
+ is
+\begin_inset Formula \begin{eqnarray*}
+\hat{g}(x) & = & \frac{\sum_{t=1}^{n}y_{t}K\left[\left(x-x_{t}\right)/\gamma_{n}\right]}{\sum_{t=1}^{n}K\left[\left(x-x_{t}\right)/\gamma_{n}\right]}\\
+ & \equiv & \sum_{t=1}^{n}w_{t}y_{y}\end{eqnarray*}
+
+\end_inset
+
+We see that the weight depends upon every data point in the sample.
+ To calculate the fit at every point in a sample of size 
+\begin_inset Formula $n,$
+\end_inset
+
+ on the order of 
+\begin_inset Formula $n^{2}k$
+\end_inset
+
+ calculations must be done, where 
+\begin_inset Formula $k$
+\end_inset
+
+ is the dimension of the vector of explanatory variables, 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Racine (2002) demonstrates that MPI parallelization can be used to speed
+ up calculation of the kernel regression estimator by calculating the fits
+ for portions of the sample on different computers.
+\end_layout
+
+\begin_layout BeginPlainFrame
+kernel regression, continued
+\end_layout
+
+\begin_layout Standard
+Taken from Michael Creel 
+\begin_inset Quotes eld
+\end_inset
+
+User-Friendly Parallel Computations with Econometric Examples
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph on
+Computational Economics
+\emph default
+, 2005, vol.
+ 26, issue 2, pages 107-128
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/kernel_speedup.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The PelicanHPC GNU/Linux distribution
+\end_layout
+
+\begin_layout BeginPlainFrame
+PelicanHPC
+\end_layout
+
+\begin_layout Itemize
+PelicanHPC is a live CD image that let's you set up a HPC cluster for parallel
+ computing in about 10 minutes.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figures/pelican-1.png
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The homepage is 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/PelicanHPC/
+\end_layout
+
+\end_inset
+
+ (make sure to look at the tutorial)
+\end_layout
+
+\begin_layout Itemize
+I will use this to present examples.
+ You can get the examples and run them from the CD.
+\end_layout
+
+\begin_layout BeginPlainFrame
+ParallelKnoppix
+\end_layout
+
+\begin_layout Itemize
+You might prefer to work with ParallelKnoppix (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/ParallelKnoppix/
+\end_layout
+
+\end_inset
+
+) which is a bit more user friendly.
+\end_layout
+
+\begin_layout Itemize
+However, it is older and no longer developed, and will eventually become
+ obsolete.
+\end_layout
+
+\begin_layout BeginPlainFrame
+Pelican - basic use
+\end_layout
+
+\begin_layout Itemize
+boot up a virtual master node (with home already set up on hard disk)
+\end_layout
+
+\begin_layout Itemize
+do setup, and boot a real compute node
+\end_layout
+
+\begin_layout Itemize
+run a basic example
+\end_layout
+
+\begin_layout Itemize
+encourage students to try it out before the next session
+\end_layout
+
+\begin_layout BeginPlainFrame
+What is going on here?
+\end_layout
+
+\begin_layout Itemize
+the compute nodes boot from the CD image, all nodes have same software
+\end_layout
+
+\begin_layout Itemize
+the /home directory is shared over the network to all nodes
+\end_layout
+
+\begin_layout Itemize
+passwordless ssh is set up between all nodes (shared encrypted keys are
+ used for secure internode connections)
+\end_layout
+
+\begin_layout Itemize
+lamboot is run (needed for the lam/mpi implementation of MPI) 
+\series bold
+explain this
+\end_layout
+
+\begin_layout Itemize
+the file /home/user/tmp/bhosts contains the node information, which can
+ be used with OpenMPI, or modified as appropriate
+\end_layout
+
+\begin_layout BeginPlainFrame
+finish first day here?
+\end_layout
+
+\begin_layout Section
+Basic MPI
+\end_layout
+
+\begin_layout BeginPlainFrame
+What is MPI?
+\end_layout
+
+\begin_layout Itemize
+MPI is the 
+\begin_inset Quotes eld
+\end_inset
+
+message passing interface
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.mpi-forum.org/
+\end_layout
+
+\end_inset
+
+ This is a 
+\emph on
+specification
+\emph default
+ for a means of parallel computing.
+\end_layout
+
+\begin_layout Itemize
+there are many 
+\emph on
+implementations
+\emph default
+ of MPI.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+LAM/MPI 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.lam-mpi.org/
+\end_layout
+
+\end_inset
+
+ and OpenMPI 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.open-mpi.org/
+\end_layout
+
+\end_inset
+
+ are the ones on PelicanHPC, and are what we will use.
+\end_layout
+
+\begin_layout Itemize
+An implementation can be optimized for a particular platform.
+ MPI implementations exist for Linux, Windows, MacOS, etc.
+\end_layout
+
+\end_deeper
+\begin_layout BeginPlainFrame
+MPI is portable
+\end_layout
+
+\begin_layout Itemize
+It will run on a desktop computer, on any of a number of operating systems.
+ You can use all available cores.
+\end_layout
+
+\begin_layout Itemize
+The same code will run on a cluster on PCs
+\end_layout
+
+\begin_layout Itemize
+The same code will run on a supercomputer
+\end_layout
+
+\begin_layout BeginPlainFrame
+Binding functions
+\end_layout
+
+\begin_layout Itemize
+MPI implementations typically provide libraries for Fortran and C/C++
+\end_layout
+
+\begin_layout Itemize
+However, there are numerous collections of bindings for other languages,
+ such as Matlab, Ox, R, Python and GNU Octave.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+this lets you make calls to MPI functions from the high level languages.
+ The high level language dynamically loads the C functions when needed.
+ The binding functions provide the interface.
+\end_layout
+
+\end_deeper
+\begin_layout BeginPlainFrame
+GNU Octave and MPITB
+\end_layout
+
+\begin_layout Itemize
+GNU Octave 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gnu.org/software/octave/
+\end_layout
+
+\end_inset
+
+ is similar to Matlab.
+ Most Matlab code will run on Octave without modification.
+\end_layout
+
+\begin_layout BeginPlainFrame
+Free software (?!)
+\end_layout
+
+\begin_layout Itemize
+Octave is free software.
+ What does 
+\begin_inset Quotes eld
+\end_inset
+
+free
+\begin_inset Quotes erd
+\end_inset
+
+ mean here?
+\end_layout
+
+\begin_layout Itemize
+most importantly, it means that you (and everyone else) get to have the
+ source code, and you can change it to make it work the way you want to.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Scientists have an obligation to facilitate replication of their results.
+ Using free software is one means of doing so.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+On an aside, if you have enough interest in this topic to ever read these
+ words, it is almost certainly in your personal interest to switch to free
+ software now.
+ Your productivity will increase.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+\begin_inset Quotes eld
+\end_inset
+
+free
+\begin_inset Quotes erd
+\end_inset
+
+ also means you don't have to
+\color inherit
+ pay for it.
+\end_layout
+
+\begin_layout Itemize
+This is important if you want to run 30 copies on a cluster.
+\end_layout
+
+\begin_layout BeginPlainFrame
+MPITB for GNU Octave
+\end_layout
+
+\begin_layout Itemize
+MPITB is the 
+\begin_inset Quotes eld
+\end_inset
+
+message passing interface toolbox
+\begin_inset Quotes erd
+\end_inset
+
+ for GNU Octave.
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://atc.ugr.es/javier-bin/mpitb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+this lets you use MPI in Octave scripts
+\end_layout
+
+\begin_layout Itemize
+this is an example of a set of 
+\begin_inset Quotes eld
+\end_inset
+
+binding functions
+\begin_inset Quotes erd
+\end_inset
+
+ that make a library of relatively low-level (hard to use) C/Fortran functions
+ available to a high-level (easy to use) package.
+ There are many other examples.
+ MPITB is an outlier for its high quality - it is robust, complete, well-documen
+ted, well-maintained, and it offers excellent performance.
+\end_layout
+
+\begin_layout Itemize
+MPITB is developed in Spain! Our tax euros are working!
+\end_layout
+
+\begin_layout BeginPlainFrame
+MPI_Init and MPI_Finalize
+\end_layout
+
+\begin_layout Itemize
+MPI programs start with MPI_Init, and end with MPI_Finalize.
+\end_layout
+
+\begin_layout Itemize
+when using MPITB, we also need to clear variables out of memory between
+ successive calls to MPI_Init,
+\end_layout
+
+\begin_layout Itemize
+see first.m (run these on the Acer laptop, directly, not in VMware - 
+\series bold
+remember to lamboot
+\series default
+)
+\end_layout
+
+\begin_layout BeginPlainFrame
+MPI_Comm_size and MPI_Comm_rank
+\end_layout
+
+\begin_layout Itemize
+an MPI 
+\emph on
+communicator
+\emph default
+ is a set of 
+\emph on
+ranks
+\emph default
+ (nodes, processes) that can work in a group.
+ It is isolated from other sets of ranks, so that messages stay within the
+ communicator.
+\end_layout
+
+\begin_layout Itemize
+It is possible to use multiple communicators, but we'll use just one.
+ Its name in MPITB is 
+\begin_inset Quotes eld
+\end_inset
+
+MPI_COMM_WORLD
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the 
+\emph on
+size 
+\emph default
+of an MPI communicator is the number of ranks that it holds.
+\end_layout
+
+\begin_layout Itemize
+ranks are processes that run on CPUs.
+ Any number of ranks can run on any number of CPUS.
+ The specific way that ranks are spread over CPUs is part of the design
+ of the parallel program, and can have an important effect on performance.
+ With a homogeneous cluster of single core CPUs, a typical starting point
+ would be to assign one rank to each CPU.
+ For dual core CPUs, one should probably have a rank for each core.
+\end_layout
+
+\begin_layout Itemize
+see second.m
+\end_layout
+
+\begin_layout BeginPlainFrame
+Creating child Octaves
+\end_layout
+
+\begin_layout Itemize
+To increase the size of the communicator, we need to create more threads
+ that run Octave, and integrate them into the communicator.
+ The LAM_Init command will do this for us.
+\end_layout
+
+\begin_layout Itemize
+Using LAM_Init and spawning child Octaves is only one way to use MPITB.
+ We do not have time to explore other options.
+ The method we use here works fairly well, however.
+\end_layout
+
+\begin_layout Itemize
+see third.m 
+\series bold
+Important reminder to self
+\series default
+ - all nodes should be on one machine to see the messages.
+\end_layout
+
+\begin_layout BeginPlainFrame
+NumCmds_Send
+\end_layout
+
+\begin_layout Itemize
+the method uses the NumCmds protocol for communication.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+NumCmds_Send is used to send Octave objects to all ranks, along with a command
+ to execute
+\end_layout
+
+\begin_layout Itemize
+after executing a command, the ranks loop, waiting for a new command to
+ execute
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+see fourth.m: 
+\end_layout
+
+\begin_layout BeginPlainFrame
+Sending and receiving
+\end_layout
+
+\begin_layout Itemize
+once we have more than one rank, we need to know how they can communicate
+\end_layout
+
+\begin_layout Itemize
+the simplest form is point-to-point communication, using MPI_Send and MPI_Recv
+\end_layout
+
+\begin_layout Itemize
+see fifth.m
+\end_layout
+
+\begin_layout Itemize
+you can send Octave objects of any type - 
+\series bold
+for example, matrices
+\series default
+.
+ See sixth.m
+\end_layout
+
+\begin_layout Section
+Montecarlo
+\end_layout
+
+\begin_layout BeginPlainFrame
+Checking if a message is ready
+\end_layout
+
+\begin_layout Itemize
+sometimes you don't want to block execution to wait for a message to arrive.
+ To check if a message has arrived, you can use MPI_Iprobe (use Octave's
+ help).
+ 
+\end_layout
+
+\begin_layout Itemize
+examine and run seventh.m
+\end_layout
+
+\begin_layout Itemize
+this is used in montecarlo.m.
+\end_layout
+
+\begin_layout BeginPlainFrame
+montecarlo.m
+\end_layout
+
+\begin_layout Itemize
+MPI_Iprobe is used so that results can be received in the order they are
+ ready.
+\end_layout
+
+\begin_layout Itemize
+the frontend node does not participate in the generation of results, it
+ only gathers them.
+\end_layout
+
+\begin_layout Itemize
+for this reason, the number of compute nodes (not counting the frontend)
+ should be set equal to the number of CPU cores available.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The frontend will run rank 0, which uses very little CPU time.
+ Mostly it is polling the others to see if they have results.
+\end_layout
+
+\begin_layout Itemize
+The frontend also runs one of the computational ranks, to keep its CPU busy
+\end_layout
+
+\begin_layout Itemize
+the computational nodes run a rank on each CPU core they have
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The goal is to keep all CPUs in the cluster fully occupied.
+\end_layout
+
+\begin_layout BeginPlainFrame
+montecarlo_nodes.m
+\end_layout
+
+\begin_layout BeginPlainFrame
+mc_example3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/montecarlo.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+who knows what that thing to the R of the logo is?
+\end_layout
+
+\begin_layout Itemize
+look at the code for this
+\end_layout
+
+\begin_layout BeginPlainFrame
+mc_example1.m
+\end_layout
+
+\begin_layout BeginPlainFrame
+mc_example2.m
+\end_layout
+
+\begin_layout BeginPlainFrame
+Homework
+\end_layout
+
+\begin_layout Itemize
+write GNU Octave code to do a Monte Carlo study of the OLS estimator of
+ 
+\begin_inset Formula $\rho$
+\end_inset
+
+ in the model
+\begin_inset Formula \[
+y_{t}=\alpha+\rho y_{t-1}+\epsilon_{t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+use 
+\begin_inset Formula $n=30$
+\end_inset
+
+ observations, with the true parameter values 
+\begin_inset Formula $\alpha=0;$
+\end_inset
+
+
+\begin_inset Formula $\rho=0.95$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{t}\sim$
+\end_inset
+
+IIN(0,1)
+\end_layout
+
+\begin_layout Itemize
+your code should make use of montecarlo.m
+\end_layout
+
+\begin_layout Section
+A real problem and a real cluster
+\end_layout
+
+\begin_layout BeginPlainFrame
+A real problem and a real cluster
+\end_layout
+
+\begin_layout Itemize
+let's look at a research problem that requires a lot of computational power
+\end_layout
+
+\begin_layout Itemize
+when you have access to computing power your research agenda might change
+\end_layout
+
+\begin_layout Itemize
+once you learn how to do this, there's no reason not to try to get time
+ on a supercomputer like Marenostrum to really increase the scale.
+\end_layout
+
+\begin_layout BeginPlainFrame
+The DLV model
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Billio and Monfort (2003)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\mbox{DLV: }\begin{cases}
+y_{t}= & r_{t}\left(y^{t-1},y^{*t},\epsilon_{t};\theta\right)\\
+y_{t}^{*}= & r_{t}^{*}\left(y^{t-1},y^{*t-1},\epsilon_{t}^{*};\theta\right)\end{cases}\label{eq:DLV model}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $y^{t-1}$
+\end_inset
+
+ is notation for 
+\begin_inset Formula $\left(y_{1}^{\prime},...,y_{t-1}^{\prime}\right)^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left\{ \epsilon_{t}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ \epsilon_{t}^{*}\right\} $
+\end_inset
+
+ are two independent white noises with known distributions
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a vector of unknown parameters
+\end_layout
+
+\begin_layout BeginPlainFrame
+DLV models are often impossible to estimate using classical methods
+\end_layout
+
+\begin_layout Itemize
+Calculation of the likelihood function requires finding the density of 
+\begin_inset Formula $y^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+this involves integrating out all of the 
+\begin_inset Formula $y_{t}^{*}$
+\end_inset
+
+, of which there are 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ It is in general an untractable problem
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Without the density of the observable variables, analytic moments cannot
+ be computed
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Without the density function, maximum likelihood is unavailable
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Without moments, moment-based estimation methods are not available
+\end_layout
+
+\begin_layout BeginPlainFrame
+Why is SMM inefficient?
+\end_layout
+
+\begin_layout Itemize
+SMM is inefficient for DLV models, since conditional moments can't be used.
+ Why not?
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+It's because we can't sample the latent variables conditional on the history
+ of the observed variables.
+ Recall the model:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\mbox{DLV: }\begin{cases}
+y_{t}= & r_{t}\left(y^{t-1},y^{*t},\epsilon_{t};\theta\right)\end{cases}\label{eq:DLV model}\end{equation}
+
+\end_inset
+
+If we could sample from 
+\begin_inset Formula $y^{*t}|y^{t-1}$
+\end_inset
+
+, we could substitute the draw into the DLV to get a draw from 
+\begin_inset Formula $y_{t}|y^{t-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+For Markovian models, the Markov chain Monte Carlo method can be used to
+ sample from 
+\begin_inset Formula $y^{*t}|y^{t-1},$
+\end_inset
+
+ since in this case information about the distant past is not needed to
+ sample the latent variables.
+ Fiorentini, Sentana and Shephard (2004) is an example.
+\end_layout
+
+\begin_layout BeginPlainFrame
+The GMM estimator
+\end_layout
+
+\begin_layout Itemize
+Error functions are of the form
+\begin_inset Formula \begin{align}
+\epsilon(y_{t},x_{t};\theta) & =y_{t}-\phi(x_{t};\theta),\label{eq:error functions}\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Moment conditions are defined by interacting a vector of instrumental variables
+ 
+\begin_inset Formula $z(x_{t})$
+\end_inset
+
+ with error functions:
+\begin_inset Formula \begin{equation}
+m(y_{t},x_{t};\theta)=z(x_{t})\otimes\epsilon(y_{t},x_{t};\theta)\label{eq:moment conditions}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Average moment conditions are
+\begin_inset Formula \begin{equation}
+m_{n}(Z_{n};\theta)=\frac{1}{n}\sum_{t=1}^{n}m(y_{t},x_{t};\theta)\label{eq:average moments}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The objective function is 
+\begin_inset Formula \begin{equation}
+s_{n}(Z_{n};\theta)=m_{n}^{\prime}(Z_{n};\theta)W(\hat{\tau}_{n})m_{n}^{\prime}(Z_{n};\theta)\label{eq:GMM objective fn}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+The SNM estimator
+\end_layout
+
+\begin_layout Itemize
+Consider a long simulation from the DLV model, 
+\begin_inset Formula $\widetilde{Z}_{S}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Kernel regression may be used to fit 
+\begin_inset Formula $\phi(x_{t};\theta)$
+\end_inset
+
+, using this simulated data 
+\begin_inset Formula \begin{equation}
+\widetilde{\phi}_{S}(x_{t};\widetilde{Z}_{S}(\theta))=\sum_{s=1}^{S}\widetilde{w}_{s}\widetilde{y_{s}}(\theta)\label{eq:kernel fit}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+the weight 
+\begin_inset Formula $\widetilde{w}_{s}$
+\end_inset
+
+ is
+\begin_inset Formula \begin{equation}
+\widetilde{w}_{s}=\frac{K\left(\frac{x_{t}-\widetilde{x}_{s}(\theta)}{h_{S}}\right)}{\sum_{s=1}^{S}K\left(\frac{x_{t}-\widetilde{x}_{s}(\theta)}{h_{S}}\right)}\label{eq:kernel weights}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\widetilde{\phi}_{S}(x_{t};\widetilde{Z}_{S}(\theta))\overset{a.s.}{\rightarrow}\phi(x_{t},\theta)$
+\end_inset
+
+, for almost all 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+, as 
+\begin_inset Formula $S\rightarrow\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $S$
+\end_inset
+
+ can be made as large as we like! (Jump back to last slide)
+\end_layout
+
+\begin_layout BeginPlainFrame
+The SNM estimator 
+\emph on
+is 
+\emph default
+the GMM estimator if S is large enough
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Classical linear model
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\mbox{Linear Model: }\begin{cases}
+y & =\beta_{1}+\beta_{2}x+\epsilon\\
+x & \sim U(0,1)\\
+\epsilon & \sim N(0,1)\end{cases}\label{eq:classical linear model}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+SNM estimation with 
+\begin_inset Formula $S=500000$
+\end_inset
+
+, 1000 Monte Carlo reps
+\end_layout
+
+\begin_layout BeginPlainFrame
+...continuation
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% the following needs the amsmath LaTeX package
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{gather}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+widehat{
+\backslash
+rm 
+\backslash
+beta}_{1}(SNM) =
+\end_layout
+
+\begin_layout Plain Layout
+
+-
+\backslash
+underset{(0.00023012)}{0.00106912}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+underset{(0.00030566)}{1.00292}
+\backslash
+,
+\backslash
+widehat{
+\backslash
+rm 
+\backslash
+beta}_{1}(GMM)
+\end_layout
+
+\begin_layout Plain Layout
+
+-
+\backslash
+underset{(0.00050332)}{0.00267236}
+\backslash
+,
+\backslash
+rm 
+\backslash
+beta_{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+notag 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+T = 1000 
+\backslash
+quad 
+\backslash
+bar{R}^2 = 0.9999 
+\backslash
+quad F(2,997) = 8.5632
+\backslash
+mbox{e+6} 
+\backslash
+quad 
+\backslash
+hat{
+\backslash
+sigma} = 0.0036169
+\backslash
+notag 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{(standard errors in parentheses)} 
+\backslash
+notag
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{gather}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% the following needs the amsmath LaTeX package
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{gather}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+widehat{
+\backslash
+rm 
+\backslash
+beta}_{2}(SNM) = 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+underset{(0.00038392)}{2.50475
+\backslash
+mbox{e-5}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+underset{(0.00029626)}{1.00389}
+\backslash
+,
+\backslash
+widehat{
+\backslash
+rm 
+\backslash
+beta}_{2}(GMM)
+\end_layout
+
+\begin_layout Plain Layout
+
+-
+\backslash
+underset{(0.00073023)}{0.000178451}
+\backslash
+,
+\backslash
+rm 
+\backslash
+beta_{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+notag 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+T = 1000 
+\backslash
+quad 
+\backslash
+bar{R}^2 = 0.9999 
+\backslash
+quad F(2,997) = 6.9636
+\backslash
+mbox{e+6} 
+\backslash
+quad 
+\backslash
+hat{
+\backslash
+sigma} = 0.0061481
+\backslash
+notag 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{(standard errors in parentheses)} 
+\backslash
+notag
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{gather}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+SNM is computationally demanding
+\end_layout
+
+\begin_layout Itemize
+to fit 
+\begin_inset Formula $n$
+\end_inset
+
+ points using 
+\begin_inset Formula $S$
+\end_inset
+
+ simulated points, we need to do approximately 
+\begin_inset Formula $knS$
+\end_inset
+
+ calculations
+\end_layout
+
+\begin_layout Itemize
+when 
+\begin_inset Formula $S$
+\end_inset
+
+ is very large, this is a lot of work
+\end_layout
+
+\begin_layout Itemize
+all of this is required for a single evaluation of the GMM criterion function.
+ When this is embedded in a quasi-Newton method, many evaluations are required.
+\end_layout
+
+\begin_layout Itemize
+the GMM criterion is not globally convex - need to use something like simulated
+ annealing to avoid local minima, then use quasi-Newton to refine
+\end_layout
+
+\begin_layout Itemize
+doing Monte Carlo adds a layer of computations
+\end_layout
+
+\begin_layout BeginPlainFrame
+Check the Pelican cluster at the UAB
+\end_layout
+
+\begin_layout Itemize
+made up of two servers, each has two quad core CPUs.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A total of 16 cores.
+ 1 server runs the PelicanHPC CD, the other is netbooted from the first
+\end_layout
+
+\begin_layout Itemize
+cost was about 4500 euros
+\end_layout
+
+\begin_layout Itemize
+keeping CPU density high is important: energy consumption and the price
+ you pay for housing are highly correlated with the number of things that
+ need to be plugged in.
+ Also, the on-machine inter-core communications is a lot faster than the
+ between-machine communition.
+ Minimize computers - mazimize cores!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+ssh to pareto, then to pelican
+\end_layout
+
+\begin_layout Itemize
+run estimate_fg, and look at htop on second screen
+\end_layout
+
+\begin_layout Itemize
+run mc.m for SV1, look at htop on second screen
+\end_layout
+
+\begin_layout Section
+Practical session: Monte Carlo on PelicanHPC
+\end_layout
+
+\begin_layout BeginPlainFrame
+Using PelicanHPC
+\end_layout
+
+\begin_layout Itemize
+PelicanHPC is an image file for a bootable CDROM.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You can boot a computer using the CDROM
+\end_layout
+
+\begin_layout Itemize
+using the CDROM does not affect anything installed on your computer, when
+ you reboot, your computer is just as it was before using PelicanHPC
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+PelicanHPC allows you to create a cluster for parallel computing using MPI
+\end_layout
+
+\begin_layout Itemize
+other computers in the cluster are booted using their ethernet interfaces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+netboot must be enabled for this to work, It is an option in the BIOS setup
+ routine
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+basic instructions for using PelicanHPC are at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/PelicanHPC/Tutorial/PelicanTutorial.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+A virtual cluster
+\end_layout
+
+\begin_layout Itemize
+this uses VMware server (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.vmware.com/download/server/
+\end_layout
+
+\end_inset
+
+).
+ This is free (as in free beer) software that works on Linux and Windows.
+\end_layout
+
+\begin_layout Itemize
+it lets you use Pelican without actually rebooting your computer
+\end_layout
+
+\begin_layout Itemize
+the virtual frontend node can be used to boot a cluster of real compute
+ nodes
+\end_layout
+
+\begin_layout Itemize
+the compute nodes can also be virtual: it is possible to have an entirely
+ virtual PelicanHPC cluster running on a set of Windows machines
+\end_layout
+
+\begin_layout Itemize
+go on to demonstrate Pelican, running the Monte Carlo examples.
+\end_layout
+
+\begin_layout BeginPlainFrame
+make_pelican
+\end_layout
+
+\begin_layout Itemize
+PelicanHPC ISO images are made by running a single script: make_pelican
+\end_layout
+
+\begin_layout Itemize
+if you use Debian Linux (or a derivative), you can install the live_helper
+ package, and then use the script to make your own version
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+this allows you to specify a password, select software packages you want,
+ place the home directory on permanent storage, etc.
+\end_layout
+
+\begin_layout Itemize
+this is probably not something to try until you are more familiar with the
+ basics - it's just information to be aware of in case you become interested
+\end_layout
+
+\end_deeper
+\begin_layout Section
+GMM
+\end_layout
+
+\begin_layout BeginPlainFrame
+GMM
+\end_layout
+
+\begin_layout Itemize
+gmm_results.m 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/GMM/gmm_result
+s.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+gmm_estimate.m 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/GMM/gmm_estima
+te.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+gmm_obj.m 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/GMM/gmm_obj.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+average_moments.m 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/GMM/average_mo
+ments.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+sum_moments_nodes.m 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/GMM/sum_moment
+s_nodes.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parameterized Expectations Algorithm
+\end_layout
+
+\begin_layout BeginPlainFrame
+Solving macroeconomic models
+\end_layout
+
+\begin_layout Standard
+An example is a forthcoming paper
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/pea_paper.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+PEA
+\end_layout
+
+\begin_layout Itemize
+uses a long simulation from a model, conditional on a parameterized model
+ of expectations
+\end_layout
+
+\begin_layout Itemize
+the parameterized model of expectations is fit to the generated data
+\end_layout
+
+\begin_layout Itemize
+when the generated data is consistent with the model of expectations, the
+ model has been solved
+\end_layout
+
+\begin_layout Itemize
+both making a long simulation and fitting the model of expectations can
+ easily be parallelized
+\end_layout
+
+\begin_layout Itemize
+is is possible to speed up a simple model by more than 80%.
+ More complicated models should give even better results
+\end_layout
+
+\begin_layout BeginPlainFrame
+Speedups
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/pea_speedup.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Go look at the code
+\end_layout
+
+\begin_layout Itemize
+pea_example.m 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/pea/example/pea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+note use of C++ to write the model
+\end_layout
+
+\begin_layout Itemize
+run the examples
+\end_layout
+
+\begin_layout Section
+Practical Projects
+\end_layout
+
+\begin_layout BeginPlainFrame
+Practical projects
+\end_layout
+
+\begin_layout Standard
+The last two hours will be used for discussion and working on the following
+ projects.
+ Please bring your laptop computer! You should have done some parallel computing
+ by the time we are done!
+\end_layout
+
+\begin_layout BeginPlainFrame
+make a real cluster
+\end_layout
+
+\begin_layout Itemize
+Create a real cluster: several students, and several laptop computers.
+ Need a copy of the Pelican CD and a switch
+\end_layout
+
+\begin_layout BeginPlainFrame
+make a virtual cluster
+\end_layout
+
+\begin_layout Itemize
+Create an entirely virtual cluster: at least 1 student with a laptop computer.
+\end_layout
+
+\begin_layout Itemize
+this is more difficult than making a real cluster, and more useful for learning,
+\end_layout
+
+\begin_layout Itemize
+Need a copy of VMware server and the Pelican ISO image.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Install VMware server to allow bridged, NAT and host only networking
+\end_layout
+
+\begin_layout Enumerate
+create a virtual machine with 2 NICs, first bridged, second NAT.
+ Use it to boot CD image
+\end_layout
+
+\begin_layout Enumerate
+create a virtual machine with bridged NIC, use it to PXE boot the compute
+ node
+\end_layout
+
+\end_deeper
+\begin_layout BeginPlainFrame
+Run the examples
+\end_layout
+
+\begin_layout Itemize
+requires a single (hopefully multicore) computer
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Monte Carlo study: boot up Pelican and use only the frontend.
+ Do the AR1 Monte Carlo suggested above.
+\end_layout
+
+\begin_layout Itemize
+Do GMM estimation: boot up Pelican and use only the frontend.
+ Make hausman.m run on 2 ranks.
+\end_layout
+
+\begin_layout Standard
+run pea_example.m
+\end_layout
+
+\end_deeper
+\begin_layout BeginPlainFrame
+Please feel free to ask questions!
+\end_layout
+
+\begin_layout Itemize
+Write me directly at michael.creel@uab.es, or use the PelicanHPC forum.
+\end_layout
+
+\begin_layout Itemize
+I understand perfectly that this is a big jump for most of you, so please
+ don't worry that your questions are silly.
+ 4 years ago I was asking the same questions.
+\end_layout
+
+\begin_layout Itemize
+If something doesn't work as advertised, I would really appreciate that
+ you let me know.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

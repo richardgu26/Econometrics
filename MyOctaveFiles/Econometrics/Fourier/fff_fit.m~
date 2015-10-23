@@ -1,0 +1,7 @@
+function fit = fff_fit(y, x, kalpha)
+	z = fff_regressors(x, kalpha);
+	b = ols(y, z);
+	fit = z*b;
+endfunction
+
+

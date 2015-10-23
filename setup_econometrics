@@ -1,0 +1,25 @@
+#!/bin/sh
+# run this when Octave switches versions
+LOCATION=`pwd`
+
+cd $LOCATION/MyOctaveFiles/OctFiles
+echo "making my .cc files"
+make clean
+make -j4 all
+
+cd $LOCATION/MyOctaveFiles/mpi/src
+echo "making mpi files"
+make clean
+make -j4 all
+
+cd $LOCATION/MyOctaveFiles/Econometrics/NearestNeighbors/ann_1.1.2_creel
+make clean
+make linux-g++
+cp $LOCATION/MyOctaveFiles/Econometrics/NearestNeighbors/ann_1.1.2_creel/bin/ann_sample ~/bin
+
+cd $LOCATION/Examples/Parallel/pea/example
+echo "making pea files"
+mkoctfile *.cc
+
+cd $LOCATION/MyOctaveFiles/lbfgs
+octave-cli --eval install_lbfgs

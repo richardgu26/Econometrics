@@ -1,0 +1,19 @@
+
+*********************************************************
+OLS estimation results
+Observations 21
+R-squared 0.967090
+Sigma-squared 0.983171
+
+Results (Ordinary var-cov estimator)
+
+                  estimate     st.err.     t-stat.     p-value  
+Constant            16.992       1.492      11.388       0.000
+Profits              0.215       0.096       2.232       0.039
+Lagged Profits       0.076       0.094       0.806       0.431
+Wages                0.774       0.048      16.234       0.000
+
+*********************************************************
+                           Value     p-value  
+Breusch-Godfrey test       2.129       0.345
+

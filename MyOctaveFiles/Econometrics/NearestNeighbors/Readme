@@ -1,0 +1,10 @@
+nearest_neighbors.m is an interface to a simple C program that uses ANN to find exact 
+nearest neighbors. The C executable is ann_sample, made using the patched ANN code.
+
+The modification to the ANN source code is in the file ./sample/ann_sample.cpp
+
+Make ANN as usual, then copy ann_sample from ANN/bin/ann_sample to some place in your path.
+
+
+knn_fit and knn_density are old functions that used the SWIG bindings to ANN. They need to be updated
+to use nearest_neighbors.m (easy to do)

@@ -1,0 +1,22 @@
+Simple code to illustrate the DSGE example from Creel and Kristensen
+(2013) "Indirect Likelihood Inference". This code does not use
+parallelization, so it is somewhat slow and is intended to be
+illustrative. Production code that uses MPI to execute on a cluster
+is available from the authors.
+
+To use this, just run DSGE_SBIL_Simple from the Matlab/Octave prompt.
+You must have Dynare installed.
+
+IF RUNNING PELICANHPC: type "UseDynare" at octave prompt before running
+the script. This simply adds dynare to the octave path.
+
+This example code uses a very small number of simulations and
+Monte Carlo replications, just to show how things work. To get
+better results, you need to increase the number of simulations, S.
+To do that, edit the main file, DSGE_SBIL_Simple.m. You might also
+increase the number of Monte Carlo replications.
+
+Special thanks to Johannes Pfeifer for help in making the code run
+on Matlab, and for some very nice hints to speed up execution.
+
+For support, write to michael.creel@uab.es

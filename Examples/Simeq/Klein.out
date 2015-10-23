@@ -1,0 +1,46 @@
+CONSUMPTION EQUATION
+
+*******************************************************
+2SLS estimation results
+Observations 21
+R-squared 0.976711
+Sigma-squared 1.044059
+
+                  estimate     st.err.     t-stat.     p-value  
+Constant            16.555       1.321      12.534       0.000
+Profits              0.017       0.118       0.147       0.885
+Lagged Profits       0.216       0.107       2.016       0.060
+Wages                0.810       0.040      20.129       0.000
+
+*******************************************************
+INVESTMENT EQUATION
+
+*******************************************************
+2SLS estimation results
+Observations 21
+R-squared 0.884884
+Sigma-squared 1.383184
+
+                  estimate     st.err.     t-stat.     p-value  
+Constant            20.278       7.543       2.688       0.016
+Profits              0.150       0.173       0.867       0.398
+Lagged Profits       0.616       0.163       3.784       0.001
+Lagged Capital      -0.158       0.036      -4.368       0.000
+
+*******************************************************
+WAGES EQUATION
+
+*******************************************************
+2SLS estimation results
+Observations 21
+R-squared 0.987414
+Sigma-squared 0.476427
+
+                 estimate     st.err.     t-stat.     p-value  
+Constant            1.500       1.148       1.307       0.209
+Output              0.439       0.036      12.316       0.000
+Lagged Output       0.147       0.039       3.777       0.002
+Trend               0.130       0.029       4.475       0.000
+
+*******************************************************
+

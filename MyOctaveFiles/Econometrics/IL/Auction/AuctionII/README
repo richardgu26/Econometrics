@@ -1,0 +1,7 @@
+To use the code in this directory, you need to have Octave and MPI.
+The easiest way is to run it on PelicanHPC, which has everything installed.
+
+* edit make_simdata.m to choose sample size, and number of simulations, S.
+* execute "mpirun -np X --hostfile /home/user/tmp/bhost octave --eval make_simdata"
+	where X is the total number of cores in your cluster.
+* when that's done, execute "octave --eval Results" 
