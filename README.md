@@ -6,7 +6,7 @@ Michael Creel's graduate level econometrics notes, example code, and support pro
 - they contain links that point to example programs using the Octave matrix programming language. Octave sometimes gets little respect as a language for econometrics, with allegations that it is slow compared to Matlab, etc. A couple of points:
  - for plain Octave, these allegations are true, in some respects at least
  -  Octave is free, and it runs on all popular operating systems
-plain Octave is perfectly good for ordinary econometrics of the sort that most students and many researchers need to do
+ - plain Octave is perfectly good for ordinary econometrics of the sort that most students and many researchers need to do
  - Octave can easily be linked to parallel matrix algebra libraries so that it uses all cores of a computer. Plain Octave doesn't do that by default.
  -  Octave can be compiled using proprietary compilers, if you have them.
  - it is easy to use C++ code for bottlenecks. For serious research work on computationally demanding problems, this step is fundamental
