@@ -4,7 +4,7 @@
 # for Pelican, change http://pareto.uab.es/mcreel to file:///home/user -> econometrics_pelican.lyx
 
 cp econometrics.lyx econometrics_local.lyx
-sed -i 's@http://pareto.uab.es/mcreel@file:///home/michael/Mystuff@g' econometrics_local.lyx
+sed -i 's@https://github.com/mcreel/Econometrics/blob/master/@file:///home/michael/Mystuff/Econometrics/@g' econometrics_local.lyx
 
 cp econometrics.lyx econometrics_pelican.lyx
 sed -i 's@http://pareto.uab.es/mcreel@file:///home/user@g' econometrics_pelican.lyx

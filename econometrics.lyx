@@ -354,7 +354,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/Examples}
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/Examples}
 \end_layout
 
 \end_inset
@@ -367,7 +367,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles}
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles}
 \end_layout
 
 \end_inset
@@ -698,7 +698,7 @@ The materials are available on my
 \begin_inset CommandInset href
 LatexCommand href
 name "web page"
-target "http://pareto.uab.es/mcreel/Econometrics/"
+target "https://github.com/mcreel/Econometrics/blob/master/"
 
 \end_inset
 
@@ -733,7 +733,7 @@ status open
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/Examples}
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/Examples}
 \end_layout
 
 \end_inset
@@ -747,7 +747,7 @@ status open
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles}
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles}
 \end_layout
 
 \end_inset
@@ -764,7 +764,7 @@ status open
 
 
 \backslash
-htmladdnormallink{home page}{http://pareto.uab.es/mcreel/Econometrics}
+htmladdnormallink{home page}{https://github.com/mcreel/Econometrics/blob/master}
 \end_layout
 
 \end_inset
@@ -783,7 +783,7 @@ status open
 
 
 \backslash
-htmladdnormallink{Linux OS image file }{http://pareto.uab.es/mcreel/Econometrics/e
+htmladdnormallink{Linux OS image file }{https://github.com/mcreel/Econometrics/blob/master/e
 conometrics.iso}
 \end_layout
 
@@ -838,7 +838,7 @@ status open
 
 
 \backslash
-htmladdnormallink{econometrics.ova }{http://pareto.uab.es/mcreel/Econometrics/econo
+htmladdnormallink{econometrics.ova }{https://github.com/mcreel/Econometrics/blob/master/econo
 metrics.ova}
 \end_layout
 
@@ -951,7 +951,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{data}{http://pareto.uab.es/mcreel/Econometrics/Examples/Intro/da
+htmladdnormallink{data}{https://github.com/mcreel/Econometrics/blob/master/Examples/Intro/da
 ta}
 \end_layout
 
@@ -1601,7 +1601,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{TypicalData.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{TypicalData.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 OLS/TypicalData.m}
 \end_layout
 
@@ -1931,7 +1931,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{OlsFit.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/OLS/O
+htmladdnormallink{OlsFit.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/OLS/O
 lsFit.m} 
 \end_layout
 
@@ -3256,7 +3256,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{Unbiased.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/OLS
+htmladdnormallink{Unbiased.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/OLS
 /Unbiased.m} 
 \end_layout
 
@@ -3384,7 +3384,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{Biased.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/OLS/B
+htmladdnormallink{Biased.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/OLS/B
 iased.m} 
 \end_layout
 
@@ -3687,7 +3687,7 @@ status open
 
  
 \backslash
-htmladdnormallink{Efficiency.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/O
+htmladdnormallink{Efficiency.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/O
 LS/Efficiency.m} 
 \end_layout
 
@@ -4141,7 +4141,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{nerlove.data}{http://pareto.uab.es/mcreel/Econometrics/Examples/D
+htmladdnormallink{nerlove.data}{https://github.com/mcreel/Econometrics/blob/master/Examples/D
 ata/nerlove.data} 
 \end_layout
 
@@ -4252,7 +4252,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{Nerlove.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/OLS/
+htmladdnormallink{Nerlove.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/OLS/
 Nerlove.m} 
 \end_layout
 
@@ -4346,7 +4346,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{nerlove.gdt}{http://pareto.uab.es/mcreel/Econometrics/Examples/Da
+htmladdnormallink{nerlove.gdt}{https://github.com/mcreel/Econometrics/blob/master/Examples/Da
 ta/nerlove.gdt} 
 \end_layout
 
@@ -7369,7 +7369,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{ExampleDeltaMethod.m}{http://pareto.uab.es/mcreel/Econometrics/Ex
+htmladdnormallink{ExampleDeltaMethod.m}{https://github.com/mcreel/Econometrics/blob/master/Ex
 amples/Restrictions/ExampleDeltaMethod.m}
 \end_layout
 
@@ -7518,7 +7518,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{NerloveRestrictions.m}{http://pareto.uab.es/mcreel/Econometrics/E
+htmladdnormallink{NerloveRestrictions.m}{https://github.com/mcreel/Econometrics/blob/master/E
 xamples/Restrictions/NerloveRestrictions.m} 
 \end_layout
 
@@ -7755,7 +7755,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{Restrictions/ChowTest.m}{http://pareto.uab.es/mcreel/Econometrics
+htmladdnormallink{Restrictions/ChowTest.m}{https://github.com/mcreel/Econometrics/blob/master
 /Examples/Restrictions/ChowTest.m}
 \end_layout
 
@@ -8889,7 +8889,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{mortality.data}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{mortality.data}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /Data/mortality.data} 
 \end_layout
 
@@ -12075,7 +12075,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{sampsel.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Figu
+htmladdnormallink{sampsel.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Figu
 res/sampsel.m} 
 \end_layout
 
@@ -14103,7 +14103,7 @@ status open
 
  
 \backslash
-htmladdnormallink{GLS/EffectsOLS.m}{http://pareto.uab.es/mcreel/Econometrics/Exampl
+htmladdnormallink{GLS/EffectsOLS.m}{https://github.com/mcreel/Econometrics/blob/master/Exampl
 es/GLS/EffectsOLS.m}
 \end_layout
 
@@ -14273,7 +14273,7 @@ status open
 
  
 \backslash
-htmladdnormallink{GLS/cholesky.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{GLS/cholesky.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /GLS/cholesky.m}
 \end_layout
 
@@ -14954,7 +14954,7 @@ status collapsed
 \backslash
 htmladdnormallink{bootstrap
 \backslash
-_example1.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/bootstrap/b
+_example1.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Parallel/bootstrap/b
 ootstrap
 \backslash
 _example1.m}
@@ -15885,7 +15885,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/NerloveResiduals.m}{http://pareto.uab.es/mcreel/Econometrics/
+htmladdnormallink{GLS/NerloveResiduals.m}{https://github.com/mcreel/Econometrics/blob/master/
 Examples/GLS/NerloveResiduals.m}
 \end_layout
 
@@ -15942,7 +15942,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/HetTests.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{GLS/HetTests.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /GLS/HetTests.m}
 \end_layout
 
@@ -15989,7 +15989,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/NerloveResiduals.m}{http://pareto.uab.es/mcreel/Econometrics/
+htmladdnormallink{GLS/NerloveResiduals.m}{https://github.com/mcreel/Econometrics/blob/master/
 Examples/GLS/NerloveResiduals.m}
 \end_layout
 
@@ -16003,7 +16003,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/HetTests.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{GLS/HetTests.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /GLS/HetTests.m}
 \end_layout
 
@@ -16082,7 +16082,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/NerloveGLS.m}{http://pareto.uab.es/mcreel/Econometrics/Exampl
+htmladdnormallink{GLS/NerloveGLS.m}{https://github.com/mcreel/Econometrics/blob/master/Exampl
 es/GLS/NerloveGLS.m}
 \end_layout
 
@@ -16225,7 +16225,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{CO2.data}{http://pareto.uab.es/mcreel/Econometrics/Examples/Data/
+htmladdnormallink{CO2.data}{https://github.com/mcreel/Econometrics/blob/master/Examples/Data/
 CO2.data} 
 \end_layout
 
@@ -17175,7 +17175,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/AR1Errors.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{GLS/AR1Errors.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/GLS/AR1Errors.m}
 \end_layout
 
@@ -18089,7 +18089,7 @@ status open
 
  
 \backslash
-htmladdnormallink{GLS/DynamicMA.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{GLS/DynamicMA.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/GLS/DynamicMA.m} 
 \end_layout
 
@@ -18335,7 +18335,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/NerloveAR.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{GLS/NerloveAR.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/GLS/NerloveAR.m}
 \end_layout
 
@@ -18446,7 +18446,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{README}{http://pareto.uab.es/mcreel/Econometrics/Examples/Data/k
+htmladdnormallink{README}{https://github.com/mcreel/Econometrics/blob/master/Examples/Data/k
 lein_readme.txt} 
 \end_layout
 
@@ -18473,7 +18473,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/Klein.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GL
+htmladdnormallink{GLS/Klein.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GL
 S/Klein.m}
 \end_layout
 
@@ -18554,7 +18554,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GLS/KleinAR1.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{GLS/KleinAR1.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /GLS/KleinAR1.m}
 \end_layout
 
@@ -18771,7 +18771,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{nerlove.data}{http://pareto.uab.es/mcreel/Econometrics/Examples/D
+htmladdnormallink{nerlove.data}{https://github.com/mcreel/Econometrics/blob/master/Examples/D
 ata/nerlove.data} 
 \end_layout
 
@@ -18851,7 +18851,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{hall.csv}{http://pareto.uab.es/mcreel/Econometrics/Examples/Data/
+htmladdnormallink{hall.csv}{https://github.com/mcreel/Econometrics/blob/master/Examples/Data/
 hall.csv} 
 \end_layout
 
@@ -18865,7 +18865,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{hall.gdt}{http://pareto.uab.es/mcreel/Econometrics/Examples/Data/
+htmladdnormallink{hall.gdt}{https://github.com/mcreel/Econometrics/blob/master/Examples/Data/
 hall.gdt} 
 \end_layout
 
@@ -22811,7 +22811,7 @@ status open
 
  
 \backslash
-htmladdnormallink{Simeq/Klein2SLS.m}{http://pareto.uab.es/mcreel/Econometrics/Examp
+htmladdnormallink{Simeq/Klein2SLS.m}{https://github.com/mcreel/Econometrics/blob/master/Examp
 les/Simeq/Klein2SLS.m}
 \end_layout
 
@@ -23111,7 +23111,7 @@ status open
 
 
 \backslash
-htmladdnormallink{GridExample.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{GridExample.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 NonlinearOptimization/GridExample.m} 
 \end_layout
 
@@ -24263,7 +24263,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{MEPS health data file}{http://pareto.uab.es/mcreel/Econometrics/
+htmladdnormallink{MEPS health data file}{https://github.com/mcreel/Econometrics/blob/master/
 Examples/Data/meps1996.data} 
 \end_layout
 
@@ -24317,7 +24317,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{ExploreMEPS.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{ExploreMEPS.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 MEPS-I/ExploreMEPS.m} 
 \end_layout
 
@@ -24415,7 +24415,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{EstimatePoisson.m}{http://pareto.uab.es/mcreel/Econometrics/Examp
+htmladdnormallink{EstimatePoisson.m}{https://github.com/mcreel/Econometrics/blob/master/Examp
 les/MEPS-I/EstimatePoisson.m}
 \end_layout
 
@@ -24471,7 +24471,7 @@ status open
 
  
 \backslash
-htmladdnormallink{EstimatePoisson.m}{http://pareto.uab.es/mcreel/Econometrics/Examp
+htmladdnormallink{EstimatePoisson.m}{https://github.com/mcreel/Econometrics/blob/master/Examp
 les/MEPS-I/EstimatePoisson.m}
 \end_layout
 
@@ -24493,7 +24493,7 @@ status open
 
  
 \backslash
-htmladdnormallink{CheckScore.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/M
+htmladdnormallink{CheckScore.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/M
 EPS-I/CheckScore.m}
 \end_layout
 
@@ -24646,7 +24646,7 @@ status open
 
  
 \backslash
-htmladdnormallink{FoggyMountain.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{FoggyMountain.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/NonlinearOptimization/FoggyMountain.m}
 \end_layout
 
@@ -24789,7 +24789,7 @@ status open
 
 
 \backslash
-htmladdnormallink{nerlove.data}{http://pareto.uab.es/mcreel/Econometrics/Examples/D
+htmladdnormallink{nerlove.data}{https://github.com/mcreel/Econometrics/blob/master/Examples/D
 ata/nerlove.data} 
 \end_layout
 
@@ -28271,7 +28271,7 @@ status open
 
  
 \backslash
-htmladdnormallink{NormalExample.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{NormalExample.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/MLE/NormalExample.m} 
 \end_layout
 
@@ -28285,7 +28285,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{NormalLF.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/MLE
+htmladdnormallink{NormalLF.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/MLE
 /NormalLF.m} 
 \end_layout
 
@@ -29962,7 +29962,7 @@ status open
 
  
 \backslash
-htmladdnormallink{LikelihoodRatioTest.m}{http://pareto.uab.es/mcreel/Econometrics/E
+htmladdnormallink{LikelihoodRatioTest.m}{https://github.com/mcreel/Econometrics/blob/master/E
 xamples/MLE/LikelihoodRatioTest.m} 
 \end_layout
 
@@ -30065,7 +30065,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{NerloveMLE.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/M
+htmladdnormallink{NerloveMLE.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/M
 LE/NerloveMLE.m} 
 \end_layout
 
@@ -30098,7 +30098,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{Nerlove.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/OLS/
+htmladdnormallink{Nerlove.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/OLS/
 Nerlove.m} 
 \end_layout
 
@@ -30669,7 +30669,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{LogitDGP.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFile
+htmladdnormallink{LogitDGP.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFile
 s/Count/LogitDGP.m} 
 \end_layout
 
@@ -30683,7 +30683,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{logit.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/C
+htmladdnormallink{logit.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles/C
 ount/Logit.m} 
 \end_layout
 
@@ -30697,7 +30697,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{EstimateLogit.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{EstimateLogit.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/NonlinearOptimization/EstimateLogit.m} 
 \end_layout
 
@@ -31416,7 +31416,7 @@ status collapsed
 \backslash
 htmladdnormallink{EstimateRBC
 \backslash
-_ML.mod}{http://pareto.uab.es/mcreel/Econometrics/Examples/RBC/EstimateRBC
+_ML.mod}{https://github.com/mcreel/Econometrics/blob/master/Examples/RBC/EstimateRBC
 \backslash
 _ML.mod} 
 \end_layout
@@ -31777,7 +31777,7 @@ There is an ML estimation routine in the provided software that accompanies
 \begin_inset CommandInset href
 LatexCommand href
 name "mle_example.m"
-target "http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/MLE/mle_example.m"
+target "https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles/Econometrics/MLE/mle_example.m"
 
 \end_inset
 
@@ -31806,7 +31806,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{Nerlove.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/OLS/
+htmladdnormallink{Nerlove.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/OLS/
 Nerlove.m} 
 \end_layout
 
@@ -31852,7 +31852,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{logit.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/C
+htmladdnormallink{logit.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles/C
 ount/Logit.m} 
 \end_layout
 
@@ -31866,7 +31866,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{EstimateLogit.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{EstimateLogit.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/NonlinearOptimization/EstimateLogit.m} 
 \end_layout
 
@@ -32571,7 +32571,7 @@ status open
 
  
 \backslash
-htmladdnormallink{GMM/chi2mm.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/G
+htmladdnormallink{GMM/chi2mm.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/G
 MM/chi2mm.m}
 \end_layout
 
@@ -32822,7 +32822,7 @@ status open
 
  
 \backslash
-htmladdnormallink{GMM/chi2gmm.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{GMM/chi2gmm.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 GMM/chi2gmm.m}
 \end_layout
 
@@ -33000,7 +33000,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GMM/chi2gmm.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{GMM/chi2gmm.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 GMM/chi2gmm.m}
 \end_layout
 
@@ -34050,7 +34050,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GMM/EfficientGMM.m}{http://pareto.uab.es/mcreel/Econometrics/Exam
+htmladdnormallink{GMM/EfficientGMM.m}{https://github.com/mcreel/Econometrics/blob/master/Exam
 ples/GMM/EfficientGMM.m}
 \end_layout
 
@@ -36158,7 +36158,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GMM/SpecTest.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{GMM/SpecTest.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /GMM/SpecTest.m} 
 \end_layout
 
@@ -36428,7 +36428,7 @@ status open
 
  
 \backslash
-htmladdnormallink{Simeq/KleinGMM.m}{http://pareto.uab.es/mcreel/Econometrics/Exampl
+htmladdnormallink{Simeq/KleinGMM.m}{https://github.com/mcreel/Econometrics/blob/master/Exampl
 es/Simeq/KleinGMM.m}
 \end_layout
 
@@ -36858,7 +36858,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{NerloveGMM.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/O
+htmladdnormallink{NerloveGMM.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/O
 LS/NerloveGMM.m} 
 \end_layout
 
@@ -36943,7 +36943,7 @@ status open
 
  
 \backslash
-htmladdnormallink{meps.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GMM/MEP
+htmladdnormallink{meps.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GMM/MEP
 S/meps.m} 
 \end_layout
 
@@ -37075,7 +37075,7 @@ status open
 
  
 \backslash
-htmladdnormallink{OLSvsIV.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GMM/
+htmladdnormallink{OLSvsIV.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GMM/
 Hausman/OLSvsIV.m} 
 \end_layout
 
@@ -37750,7 +37750,7 @@ status open
 
  
 \backslash
-htmladdnormallink{hausman.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GMM/
+htmladdnormallink{hausman.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GMM/
 Hausman/hausman.m} 
 \end_layout
 
@@ -38278,7 +38278,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{portfolio.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GM
+htmladdnormallink{portfolio.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GM
 M/portfolio.m}
 \end_layout
 
@@ -38292,7 +38292,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{tauchen.data}{http://pareto.uab.es/mcreel/Econometrics/Examples/G
+htmladdnormallink{tauchen.data}{https://github.com/mcreel/Econometrics/blob/master/Examples/G
 MM/tauchen.data}
 \end_layout
 
@@ -38382,7 +38382,7 @@ status open
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/Examples/RBC/Esti
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/Examples/RBC/Esti
 mateRBC
 \backslash
 _ML.mod}
@@ -38459,7 +38459,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{meps.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GMM/MEP
+htmladdnormallink{meps.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GMM/MEP
 S/meps.m} 
 \end_layout
 
@@ -38482,7 +38482,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{hausman.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/GMM/
+htmladdnormallink{hausman.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/GMM/
 Hausman/hausman.m} 
 \end_layout
 
@@ -38501,7 +38501,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{EstimateLogit.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{EstimateLogit.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/NonlinearOptimization/EstimateLogit.m} 
 \end_layout
 
@@ -38616,7 +38616,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GMM/chi2gmm.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{GMM/chi2gmm.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 GMM/chi2gmm.m}
 \end_layout
 
@@ -38993,7 +38993,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{GMM/SpecTest.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{GMM/SpecTest.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /GMM/SpecTest.m} 
 \end_layout
 
@@ -41219,7 +41219,7 @@ status open
 
  
 \backslash
-htmladdnormallink{BVar.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/TimeSer
+htmladdnormallink{BVar.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/TimeSer
 ies/BVar.m} 
 \end_layout
 
@@ -41617,7 +41617,7 @@ status open
 
  
 \backslash
-htmladdnormallink{Arch1Example.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{Arch1Example.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /TimeSeries/Arch1Example.m} 
 \end_layout
 
@@ -41633,7 +41633,7 @@ status open
 
  
 \backslash
-htmladdnormallink{Arch4Example.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{Arch4Example.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /TimeSeries/Arch4Example.m} 
 \end_layout
 
@@ -41750,7 +41750,7 @@ status open
 
  
 \backslash
-htmladdnormallink{Garch11Example.m}{http://pareto.uab.es/mcreel/Econometrics/Exampl
+htmladdnormallink{Garch11Example.m}{https://github.com/mcreel/Econometrics/blob/master/Exampl
 es/TimeSeries/Garch11Example.m} 
 \end_layout
 
@@ -41775,7 +41775,7 @@ status open
 
  
 \backslash
-htmladdnormallink{garch11.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Time
+htmladdnormallink{garch11.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Time
 Series/garch11.m} 
 \end_layout
 
@@ -41789,7 +41789,7 @@ status open
 
  
 \backslash
-htmladdnormallink{garch11.cc}{http://pareto.uab.es/mcreel/Econometrics/Examples/Tim
+htmladdnormallink{garch11.cc}{https://github.com/mcreel/Econometrics/blob/master/Examples/Tim
 eSeries/garch11.cc} 
 \end_layout
 
@@ -42529,7 +42529,7 @@ status open
 
  
 \backslash
-htmladdnormallink{RandomWalks.inp}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{RandomWalks.inp}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/TimeSeries/RandomWalks.inp} 
 \end_layout
 
@@ -43022,7 +43022,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{BayesExample1.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{BayesExample1.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/Bayesian/BayesExample1.m} 
 \end_layout
 
@@ -43344,7 +43344,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{BayesExample1.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{BayesExample1.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/Bayesian/BayesExample1.m} 
 \end_layout
 
@@ -43759,7 +43759,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{BayesExample2.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{BayesExample2.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/Bayesian/BayesExample2.m} 
 \end_layout
 
@@ -43843,7 +43843,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{LRMMCMC.R}{http://pareto.uab.es/mcreel/Econometrics/Examples/Baye
+htmladdnormallink{LRMMCMC.R}{https://github.com/mcreel/Econometrics/blob/master/Examples/Baye
 sian/LinearRegressionMcMcR/LRMMCMC.R} 
 \end_layout
 
@@ -44061,7 +44061,7 @@ status open
 
  
 \backslash
-htmladdnormallink{rbc.mod}{http://pareto.uab.es/mcreel/Econometrics/Examples/Bayesi
+htmladdnormallink{rbc.mod}{https://github.com/mcreel/Econometrics/blob/master/Examples/Bayesi
 an/BVAR/rbc.mod} 
 \end_layout
 
@@ -44076,7 +44076,7 @@ status open
 
  
 \backslash
-htmladdnormallink{rbcdata.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Baye
+htmladdnormallink{rbcdata.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Baye
 sian/BVAR/rbcdata.m} 
 \end_layout
 
@@ -44103,7 +44103,7 @@ status open
 
  
 \backslash
-htmladdnormallink{EstimateBVAR.m}{http://pareto.uab.es/mcreel/Econometrics/Examples
+htmladdnormallink{EstimateBVAR.m}{https://github.com/mcreel/Econometrics/blob/master/Examples
 /Bayesian/BVAR/EstimateBVAR.m} 
 \end_layout
 
@@ -44371,7 +44371,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{BayesExample3.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{BayesExample3.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/Bayesian/BayesExample3.m} 
 \end_layout
 
@@ -44614,7 +44614,7 @@ status open
 \backslash
 htmladdnormallink{EstimateRBC
 \backslash
-_Bayesian.mod}{http://pareto.uab.es/mcreel/Econometrics/Examples/RBC/EstimateRBC
+_Bayesian.mod}{https://github.com/mcreel/Econometrics/blob/master/Examples/RBC/EstimateRBC
 \backslash
 _Bayesian.mod} 
 \end_layout
@@ -48456,7 +48456,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{PoissonVariance.m}{http://pareto.uab.es/mcreel/Econometrics/Examp
+htmladdnormallink{PoissonVariance.m}{https://github.com/mcreel/Econometrics/blob/master/Examp
 les/MEPS-I/PoissonVariance.m}
 \end_layout
 
@@ -48818,7 +48818,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{This program}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{This program}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 MEPS-II/EstimateNegBin.m} 
 \end_layout
 
@@ -48882,7 +48882,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{parameterize.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctave
+htmladdnormallink{parameterize.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctave
 Files/Count/parameterize.m} 
 \end_layout
 
@@ -49194,7 +49194,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{this program}{http://pareto.uab.es/mcreel/Econometrics/Examples/
+htmladdnormallink{this program}{https://github.com/mcreel/Econometrics/blob/master/Examples/
 MEPS-II/EstimateNegBin.m} 
 \end_layout
 
@@ -54443,7 +54443,7 @@ status open
 
 
 \backslash
-htmladdnormallink{NegBinSNP.cc}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFi
+htmladdnormallink{NegBinSNP.cc}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFi
 les/OctFiles/NegBinSNP.cc}
 \end_layout
 
@@ -54579,7 +54579,7 @@ status open
 \backslash
 htmladdnormallink{kernel
 \backslash
-_example.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/Econometrics/Ker
+_example.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles/Econometrics/Ker
 nel/kernel
 \backslash
 _example.m} 
@@ -54613,7 +54613,7 @@ status open
 
 
 \backslash
-htmladdnormallink{OBDVkernel.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/N
+htmladdnormallink{OBDVkernel.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/N
 onparametric/OBDVkernel.m} 
 \end_layout
 
@@ -54689,7 +54689,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{EstimateNBSNP.m}{http://pareto.uab.es/mcreel/Econometrics/Example
+htmladdnormallink{EstimateNBSNP.m}{https://github.com/mcreel/Econometrics/blob/master/Example
 s/Nonparametric/EstimateNBSNP.m} 
 \end_layout
 
@@ -54758,7 +54758,7 @@ status open
 
 
 \backslash
-htmladdnormallink{rates}{http://pareto.uab.es/mcreel/Econometrics/Examples/Nonpara
+htmladdnormallink{rates}{https://github.com/mcreel/Econometrics/blob/master/Examples/Nonpara
 metric/SpotRate/rates}
 \end_layout
 
@@ -54779,7 +54779,7 @@ status open
 
 
 \backslash
-htmladdnormallink{README}{http://pareto.uab.es/mcreel/Econometrics/Examples/Nonpar
+htmladdnormallink{README}{https://github.com/mcreel/Econometrics/blob/master/Examples/Nonpar
 ametric/SpotRate/README}
 \end_layout
 
@@ -54977,7 +54977,7 @@ status open
 
 
 \backslash
-htmladdnormallink{kernelfit.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/No
+htmladdnormallink{kernelfit.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/No
 nparametric/SpotRate/kernelfit.m}
 \end_layout
 
@@ -55211,7 +55211,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{OBDVkernel.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/N
+htmladdnormallink{OBDVkernel.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/N
 onparametric/OBDVkernel.m} 
 \end_layout
 
@@ -55857,7 +55857,7 @@ status open
 
 
 \backslash
-htmladdnormallink{quantile.gdt}{http://pareto.uab.es/mcreel/Econometrics/Examples/Q
+htmladdnormallink{quantile.gdt}{https://github.com/mcreel/Econometrics/blob/master/Examples/Q
 uantile/quantile.gdt} 
 \end_layout
 
@@ -61955,7 +61955,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{PoissonLatentHet.m}{http://pareto.uab.es/mcreel/Econometrics/Exam
+htmladdnormallink{PoissonLatentHet.m}{https://github.com/mcreel/Econometrics/blob/master/Exam
 ples/SBEM/PoissonLatentHet.m}
 \end_layout
 
@@ -62040,7 +62040,7 @@ status open
 \backslash
 htmladdnormallink{MSM
 \backslash
-_Example.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/SBEM/MSM
+_Example.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/SBEM/MSM
 \backslash
 _Example.m}
 \end_layout
@@ -62166,7 +62166,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{probitdgp.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFil
+htmladdnormallink{probitdgp.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFil
 es/Count/ProbitDGP.m}
 \end_layout
 
@@ -62183,7 +62183,7 @@ status open
 \backslash
 htmladdnormallink{emm
 \backslash
-_moments.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/gmm/emm
+_moments.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Parallel/gmm/emm
 \backslash
 _moments.m}
 \end_layout
@@ -62360,7 +62360,7 @@ status open
 \backslash
 htmladdnormallink{emm
 \backslash
-_example.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles/ParallelKnoppix/
+_example.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles/ParallelKnoppix/
 gmm/emm
 \backslash
 _example.m}
@@ -62410,7 +62410,7 @@ status open
 
  
 \backslash
-htmladdnormallink{DSGE by SBIL}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveF
+htmladdnormallink{DSGE by SBIL}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveF
 iles/Econometrics/IL/DSGE
 \backslash
 _SBIL
@@ -62478,7 +62478,7 @@ status open
 
  
 \backslash
-htmladdnormallink{probitdgp.m}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFil
+htmladdnormallink{probitdgp.m}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFil
 es/Count/ProbitDGP.m}
 \end_layout
 
@@ -62686,7 +62686,7 @@ status collapsed
 
  
 \backslash
-htmladdnormallink{tracetest.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Pa
+htmladdnormallink{tracetest.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Pa
 rallel/montecarlo/tracetest.m}
 \end_layout
 
@@ -62716,7 +62716,7 @@ status collapsed
 \backslash
 htmladdnormallink{mc
 \backslash
-_example1.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/montecarlo/
+_example1.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Parallel/montecarlo/
 mc
 \backslash
 _example1.m}
@@ -62825,7 +62825,7 @@ status collapsed
 \backslash
 htmladdnormallink{mle
 \backslash
-_example1.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/mle/mle
+_example1.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Parallel/mle/mle
 \backslash
 _example1.m}
 \end_layout
@@ -62953,7 +62953,7 @@ status collapsed
 \backslash
 htmladdnormallink{gmm
 \backslash
-_example1.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/gmm/gmm
+_example1.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Parallel/gmm/gmm
 \backslash
 _example1.m}
 \end_layout
@@ -63059,7 +63059,7 @@ status collapsed
 \backslash
 htmladdnormallink{kernel
 \backslash
-_example1.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Parallel/kernel/kern
+_example1.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Parallel/kernel/kern
 el
 \backslash
 _example1.m}
@@ -63367,7 +63367,7 @@ status open
 
  
 \backslash
-htmladdnormallink{first.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Octave
+htmladdnormallink{first.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Octave
 Intro/first.m} 
 \end_layout
 
@@ -63486,7 +63486,7 @@ status open
 
   
 \backslash
-htmladdnormallink{second.m}{http://pareto.uab.es/mcreel/Econometrics/Examples/Octav
+htmladdnormallink{second.m}{https://github.com/mcreel/Econometrics/blob/master/Examples/Octav
 eIntro/second.m} 
 \end_layout
 
@@ -63557,7 +63557,7 @@ status open
 
 
 \backslash
-htmladdnormallink{CommonOperations.m}{http://pareto.uab.es/mcreel/Econometrics/Exam
+htmladdnormallink{CommonOperations.m}{https://github.com/mcreel/Econometrics/blob/master/Exam
 ples/OctaveIntro/CommonOperations.m}
 \end_layout
 
@@ -63576,7 +63576,7 @@ status collapsed
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/Examples/Economet
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/Examples/Economet
 ricsOctaveFiles.html}
 \end_layout
 
@@ -63590,7 +63590,7 @@ status open
 
 
 \backslash
-htmladdnormallink{here}{http://pareto.uab.es/mcreel/Econometrics/MyOctaveFiles}
+htmladdnormallink{here}{https://github.com/mcreel/Econometrics/blob/master/MyOctaveFiles}
 \end_layout
 
 \end_inset
@@ -63605,7 +63605,7 @@ status open
 
 
 \backslash
-htmladdnormallink{home page}{http://pareto.uab.es/mcreel/Econometrics}
+htmladdnormallink{home page}{https://github.com/mcreel/Econometrics/blob/master}
 \end_layout
 
 \end_inset
@@ -63665,7 +63665,7 @@ status open
 
 
 \backslash
-htmladdnormallink{home page}{http://pareto.uab.es/mcreel/Econometrics/Examples/}
+htmladdnormallink{home page}{https://github.com/mcreel/Econometrics/blob/master/Examples/}
 \end_layout
 
 \end_inset
