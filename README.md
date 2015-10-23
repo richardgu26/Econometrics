@@ -1,4 +1,5 @@
-# This page contains information about Michael Creel's graduate level econometrics notes.
+# Econometrics
+Michael Creel's graduate level econometrics notes, example code, and support programs
 
 ## There are a couple of unusual thing about these notes:
 - they are available in editable form, so that you can modify them to suit your needs. They are however copyrighted, so you should learn about the GPL before modifying and distributing them.
@@ -18,16 +19,14 @@ if you use these methods, you can get very good performance with Octave.
 - To run the examples, you need to have Octave installed. To edit the notes, you need to install LyX.
 - econometrics.iso (about 1.3GB) contains the notes and all the examples, ready to run. You don't need to install anything to use it (except a virtualization platform, if you don't have one installed). I test the image using Virtualbox, which is a free download for Windows, MacOS, and Linux. There is an appliance econometrics.ova. To use the ISO image in a virtual machine, import the .ova appliance file into Virtualbox, then in Settings, make the Storage->IDE controller point to the location where you have save the econometrics.iso file. If you would like the scripts used to build this image, they are here
 
-# To prepare the software in this directory for use, you must
-have Octave installed. Octave v4.0 or more recent is recommended.
-
 # Setup
+-To prepare the software in this directory for use, you must
+have Octave installed. Octave v4.0 or more recent is recommended.
 -If you are using this on your own Linux distro, open a terminal,
 and type "setup_econometrics" to prepare the software. You need
 to have the gcc compiler and build libraries installed for this
 to work.
-
--Last step is to include the Econometrics directory in your Octave
+- the last step is to include the Econometrics directory in your Octave
 run path.
 
 
