@@ -1,5 +1,7 @@
 # Econometrics
 Michael Creel's graduate level econometrics notes, example code, and support programs
+- to get the notes, click on econometrics.pdf, and then on RAW, which will download only the pdf. Links in the pdf point to files here on github, and will open in your browser.
+- to run the examples, see Setup, below.
 
 ## There are a couple of unusual thing about these notes:
 - they are available in editable form (econometrics.lyx), so that you can modify them to suit your needs: see www.lyx.org. They are however copyrighted, so you should learn about the GPL before modifying and distributing them.
@@ -20,14 +22,10 @@ Michael Creel's graduate level econometrics notes, example code, and support pro
 - econometrics.iso (about 1.3GB) contains the notes and all the examples, ready to run. You don't need to install anything to use it (except a virtualization platform, if you don't have one installed). I test the image using Virtualbox, which is a free download for Windows, MacOS, and Linux. There is an appliance econometrics.ova. To use the ISO image in a virtual machine, import the .ova appliance file into Virtualbox, then in Settings, make the Storage->IDE controller point to the location where you have save the econometrics.iso file. If you would like the scripts used to build this image, they are here
 
 # Setup
-- To prepare the software in this directory for use, you must
-have Octave installed. Octave v4.0 or more recent is recommended.
-- If you are using this on your own Linux distro, open a terminal,
-and type "setup_econometrics" to prepare the software. You need
-to have the gcc compiler and build libraries installed for this
-to work.
-- the last step is to include the Econometrics directory in your Octave
-run path.
+- to be able to run the examples, download the whole repo
+- To prepare the software in this directory for use, you must have Octave installed. Octave v4.0 or more recent is recommended.
+- For full functionality, you need to compile some things. If you are using this on your own Linux distro, open a terminal, and type "setup_econometrics" to prepare the software. You need to have the gcc compiler and build libraries installed for this to work. For Windows and OSX, I don't know the steps.
+- the last step is to include the Econometrics directory in your Octave run path.
 
 
 
