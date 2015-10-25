@@ -7,7 +7,7 @@ cp econometrics.lyx econometrics_local.lyx
 sed -i 's@https://github.com/mcreel/Econometrics/blob/master/@file:///home/michael/Mystuff/Econometrics/@g' econometrics_local.lyx
 
 cp econometrics.lyx econometrics_pelican.lyx
-sed -i 's@http://pareto.uab.es/mcreel@file:///home/user@g' econometrics_pelican.lyx
+sed -i 's@https://github.com/mcreel/Econometrics/blob/master/@file:///home/user/Econometrics/@g' econometrics_pelican.lyx
 
 # make pdfs
 lyx -e pdf2 econometrics.lyx
@@ -18,13 +18,4 @@ lyx -e pdf2 econometrics_pelican.lyx
 rm econometrics_local.lyx
 rm econometrics_pelican.lyx
 
-#--------------------------------------------------
-# Zip it up
-cd ../
-rm -f ./Econometrics.tgz
-rm -f ./Econometrics.zip
-tar cfz Econometrics.tgz ./Econometrics
-zip -r Econometrics.zip ./Econometrics
-#
-cd Econometrics
-#--------------------------------------------------
+
