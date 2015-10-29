@@ -40,7 +40,7 @@
     showstringspaces=false, %
     numbers=left, %
     numberstyle=\tiny, %
-    breaklines=false, %
+    breaklines=true, %
     backgroundcolor=\color{hellgelb}, %
     breakautoindent=true, %
     captionpos=b%

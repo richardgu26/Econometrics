@@ -270,7 +270,7 @@ These notes have been prepared under the assumption that the reader understands
 Introductory Econometrics: A Modern Approach
 \emph default
  by Jeffrey Wooldridge.
- It is the student's resposibility to get up to speed on this material,
+ It is the student's responsibility to get up to speed on this material,
  it will not be covered in class
 \end_layout
 
@@ -696,10 +696,10 @@ Obtaining the materials
 \end_layout
 
 \begin_layout Standard
-The materials are available on my 
+The materials are available from a 
 \begin_inset CommandInset href
 LatexCommand href
-name "web page"
+name "github repository"
 target "https://github.com/mcreel/Econometrics/blob/master/"
 
 \end_inset
@@ -726,8 +726,8 @@ econometrics.iso: An easy way run the examples
 Octave is available from the Octave home page, www.octave.org.
  Also, some updated links to packages for Windows and MacOS are at http://www.dyn
 are.org/download/octave.
- The example programs are available as links to files on my web page in
- the PDF version, and 
+ The example programs are available as links embedded in the PDF version,
+ and at 
 \begin_inset ERT
 status open
 
@@ -757,10 +757,9 @@ veFiles}
 \end_inset
 
 .
- The files won't run properly from your browser, since there are dependencies
- between files - they are only illustrative when browsing.
- To see how to use these files (edit and run them), you should go to the
- 
+ The files won't run properly from your browser, because they are Octave
+ scripts - they are only illustrative when browsing.
+ To actually run the code, you need to check out the files from the 
 \begin_inset ERT
 status open
 
@@ -768,17 +767,16 @@ status open
 
 
 \backslash
-htmladdnormallink{home page}{https://github.com/mcreel/Econometrics/blob/master}
+htmladdnormallink{repository}{https://github.com/mcreel/Econometrics}
 \end_layout
 
 \end_inset
 
- of this document, since you will probably want to download the pdf version
- together with all the support files and examples.
- Then set the base URL of the PDF file to point to wherever the Octave files
- are installed.
- Then you need to install Octave and the support files.
- All of this may sound a bit complicated, because it is.
+.
+ There's a button for getting a zip file, and there are other options for
+ download, too.
+ Then you need to install Octave, set Octave's path, etc.
+ All of this may sound a bit complicated, because it is (a bit).
  An easier solution is available: The 
 \begin_inset ERT
 status open
@@ -787,14 +785,25 @@ status open
 
 
 \backslash
-htmladdnormallink{Linux OS image file }{https://github.com/mcreel/Econometrics/bl
-ob/master/econometrics.iso}
+htmladdnormallink{econometrics.iso}{https://github.com/mcreel/Econometrics/blob/ma
+ster/econometrics.iso}
 \end_layout
 
 \end_inset
 
- econometrics.iso is an ISO image file that may be copied to USB or burnt
- to CDROM.
+ file is an ISO image file.
+ To download it from the repo, click on it, and then R-click on the RAW
+ button, and select 
+\begin_inset Quotes sld
+\end_inset
+
+save as
+\begin_inset Quotes srd
+\end_inset
+
+.
+ By default, this file will not be downloaded if you check out the repository,
+ because it is about 1.5GB in size.
  It contains a bootable-from-CD or USB GNU/Linux system.
  These notes, in source form and as a PDF, together with all of the examples
  and the software needed to run them are available on econometrics.iso.
@@ -884,6 +893,13 @@ es
 \begin_layout Itemize
 Once you have it running, you can save the state of the virtual machine
  at any time, so that it will start up quickly, as you left it.
+\end_layout
+
+\begin_layout Itemize
+Once you have tried out the code, you may decide to check out the repo and
+ install Octave on your actual physical computer.
+ Running it with virtualization allows you to try it before you decide to
+ take this step.
 \end_layout
 
 \begin_layout Standard
