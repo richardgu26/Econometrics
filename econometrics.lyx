@@ -129,10 +129,6 @@ theorems-ams-extended
 
 \begin_body
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Title
 \begin_inset Note Note
 status collapsed
@@ -217,7 +213,7 @@ Universitat Autònoma de Barcelona
 
 
 \size small
-April 24 2015
+November 2015
 \end_layout
 
 \begin_layout Standard
@@ -27692,19 +27688,7 @@ f_{YZ}(Y,Z,\psi_{0}).
 \end_inset
 
  This is the joint density of the sample.
- This density can be factored as 
-\begin_inset Formula 
-\[
-f_{YZ}(Y,Z,\psi_{0})=f_{Y|Z}(Y|Z,\theta_{0})f_{Z}(Z,\rho_{0})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The 
+ The 
 \emph on
 likelihood
 \begin_inset Index idx
@@ -27766,12 +27750,36 @@ maximum likelihood estimator
 \end_layout
 
 \begin_layout Standard
+The likelihood function can be factored as 
+\begin_inset Formula 
+\[
+f_{YZ}(Y,Z,\psi)=f_{Y|Z}(Y|Z,\theta)f_{Z}(Z,\rho)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ are whatever elements of 
+\begin_inset Formula $\psi$
+\end_inset
+
+ that happen to enter in the conditional density, and 
+\begin_inset Formula $\rho$
+\end_inset
+
+ are the elements that enter into the marginal density.
+\end_layout
+
+\begin_layout Standard
 Note that if 
-\begin_inset Formula $\theta_{0}$
+\begin_inset Formula $\theta$
 \end_inset
 
  and 
-\begin_inset Formula $\rho_{0}$
+\begin_inset Formula $\rho$
 \end_inset
 
  share no elements, then the maximizer of the conditional likelihood function
@@ -27818,10 +27826,15 @@ exogenous
 \end_inset
 
 .
+ Exogeneity may or may not hold, but when it does, we can simplify the problem.
 \end_layout
 
 \begin_layout Standard
-When this is the case, the maximum likelihood estimator of 
+With exogeneity of 
+\begin_inset Formula $Z$
+\end_inset
+
+, the maximum likelihood estimator of 
 \begin_inset Formula $\theta_{0}$
 \end_inset
 
@@ -27870,7 +27883,7 @@ Then
 \underbrace{f(y_{n}|y_{1,}y_{2},\ldots y_{n-1},Z,\theta)}\\
 \mathrm{conditional}
 \end{array}\begin{array}{c}
-\underbrace{f(y_{1,}y_{2},\ldots y_{n-1},Z,\theta)}\\
+\underbrace{f(y_{1,}y_{2},\ldots y_{n-1}|Z,\theta)}\\
 \mathrm{marginal}
 \end{array}
 \]
@@ -27946,7 +27959,7 @@ Regardless of the specific contents of
  the likelihood function can now be written as 
 \begin_inset Formula 
 \[
-L(Y,\theta)=\prod_{t=1}^{n}f(y_{t}|x_{t},\theta)
+L(Y|X;\theta)=\prod_{t=1}^{n}f(y_{t}|x_{t},\theta)
 \]
 
 \end_inset
@@ -27955,7 +27968,7 @@ The criterion function can be defined as the average log-likelihood function:
  
 \begin_inset Formula 
 \[
-s_{n}(\theta)=\frac{1}{n}\ln L(Y,\theta)=\frac{1}{n}\sum_{t=1}^{n}\ln f(y_{t}|x_{t},\theta)
+s_{n}(\theta)=\frac{1}{n}\ln L(Y|X;\theta)=\frac{1}{n}\sum_{t=1}^{n}\ln f(y_{t}|x_{t};\theta)
 \]
 
 \end_inset
@@ -28266,24 +28279,73 @@ name "exa:Likelihood-function-of"
 Likelihood function and MLE of classical linear regression model
 \emph default
 .
- The classical linear regression model with normality is outlined in Section
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:The-classical-linear"
+ Let's suppòse that a dependent variable is normally distributed:
+\begin_inset Formula $y\sim N(\mu_{0},\sigma_{0}^{2})$
+\end_inset
+
+, so
+\begin_inset Formula 
+\[
+f_{y}(y;\mu_{0},\sigma_{0}^{2})=\frac{1}{\sqrt{2\pi\sigma_{0}^{2}}}\exp\left(-\frac{(y-\mu_{0})^{2}}{2\sigma_{0}^{2}}\right)
+\]
 
 \end_inset
 
-.
- The likelihood function for this model is presented in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Asymptotic-efficiency"
+Suppose that the mean, 
+\begin_inset Formula $\mu_{0}$
+\end_inset
 
+, depends on some regressors, 
+\begin_inset Formula $x$
 \end_inset
 
 .
- A Octave/Matlab example that shows how to compute the maximum likelihood
+ The simplest way to do this is to assume that 
+\begin_inset Formula $\mu_{0}=x^{\prime}\beta_{0}.$
+\end_inset
+
+ With this, the density, conditional on 
+\begin_inset Formula $x$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+f_{y}(y|x;\beta_{0},\sigma_{0}^{2})=\frac{1}{\sqrt{2\pi\sigma_{0}^{2}}}\exp\left(-\frac{(y-x^{\prime}\beta_{0})^{2}}{2\sigma_{0}^{2}}\right)
+\]
+
+\end_inset
+
+This is an example of 
+\emph on
+parameterization 
+\emph default
+of a density, making some parameters depend on additional variables and
+ new parameters.
+ With an i.i.d.
+ sample of size 
+\begin_inset Formula $n$
+\end_inset
+
+, the overall conditional density is the product of the conditional density
+ of each observation: 
+\begin_inset Formula 
+\[
+f_{y}(y_{1},y_{2},...,y_{n}|x_{1},x_{2},...,x;\beta_{0},\sigma_{0}^{2})=\prod_{t=1}^{n}\frac{1}{\sqrt{2\pi\sigma_{0}^{2}}}\exp\left(-\frac{(y_{t}-x_{t}^{\prime}\beta_{0})^{2}}{2\sigma_{0}^{2}}\right)
+\]
+
+\end_inset
+
+Taking logarithms, and evaluating at some point in the parameter space,
+ we get the log-likelihood function: 
+\begin_inset Formula 
+\[
+\ln L(Y|X;\beta,\sigma^{2})=-n\ln\sqrt{2\pi}-n\ln\sigma-\sum_{t=1}^{n}\frac{\left(y_{t}-x_{t}'\beta\right)^{2}}{2\sigma^{2}}
+\]
+
+\end_inset
+
+A Octave/Matlab example that shows how to compute the maximum likelihood
  estimator for data that follows the CLRM with normality is in 
 \begin_inset ERT
 status open
