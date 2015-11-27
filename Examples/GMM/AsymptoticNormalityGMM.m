@@ -18,7 +18,7 @@ function results = wrapper(args)
   results = sqrt(n)*(results - theta);
 endfunction  
 
-n = 30;
+n = 1000;
 theta = 3;
 args = {theta, n};
 outfile = "gmm_as_norm.out"
@@ -26,6 +26,6 @@ reps = 1000;
 system("rm gmm_as_norm.out"); # start from scratch
 montecarlo("wrapper", args, reps, outfile, 100, true, true);
 load gmm_as_norm.out;
-hist(gmm_as_norm(:,3), 51);
+hist(gmm_as_norm(:,3), 50);
 %if (n == 10) print ("AsNorm_n10.png", "-dpng"); endif
 %if (n == 1000) print ("AsNorm_n1000.png", "-dpng"); endif

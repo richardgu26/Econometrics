@@ -11521,10 +11521,22 @@ y_{t}=\alpha+\rho y_{t-1}+\beta x_{t}+\eta_{t}
 
 So the error term is autocorrelated.
  Note that 
-\begin_inset Formula $y_{t-1}=\alpha+\rho y_{t-2}+\beta x_{t-1}+\eta_{t-1}$
+\begin_inset Formula 
+\[
+y_{t-1}=\alpha+\rho y_{t-2}+\beta x_{t-1}+\eta_{t-1}
+\]
+
 \end_inset
 
-, so we the error 
+and 
+\begin_inset Formula 
+\[
+\eta_{t-1}=\epsilon_{t-1}+\upsilon_{t-1}-\rho\upsilon_{t-2},
+\]
+
+\end_inset
+
+so the error 
 \begin_inset Formula $\eta_{t}$
 \end_inset
 
@@ -28472,39 +28484,36 @@ is
 
  or 
 \begin_inset Formula 
-\[
-\mathcal{E}\left(s_{n}\left(\theta\right)\right)-\mathcal{E}\left(s_{n}\left(\theta_{0}\right)\right)\leq0.
-\]
+\begin{align*}
+\mathcal{E}\left(s_{n}\left(\theta\right)\right)-\mathcal{E}\left(s_{n}\left(\theta_{0}\right)\right) & \leq0
+\end{align*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-A SLLN tells us that 
-\begin_inset Formula $s_{n}(\theta)\stackrel{a.s.}{\rightarrow}s_{\infty}(\theta,\theta_{0})=\lim\mathcal{E}\left(s_{n}\left(\theta\right)\right)$
-\end_inset
-
-, and with continuity and a compact parameter space, this is uniform, so
+or
 \begin_inset Formula 
 \[
-s_{\infty}(\theta,\theta_{0})-s_{\infty}(\theta_{0},\theta_{0})\leq0
+\mathcal{E}\left(s_{n}\left(\theta\right)\right)\leq\mathcal{E}\left(s_{n}\left(\theta_{0}\right)\right)
 \]
 
 \end_inset
 
- except on a set of zero probability.
- Note: the 
-\begin_inset Formula $\theta_{0}$
+Taking limits of each side:
+\begin_inset Formula 
+\[
+s_{\infty}(\theta)\leq s_{\infty}(\theta_{0})
+\]
+
 \end_inset
 
- appears because the expectation is taken with respect to the true density
- 
-\begin_inset Formula $L(\theta_{0})$
+except on a set of zero probability (by assumption b of Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Consistency of ee"
+
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Standard
@@ -28516,7 +28525,7 @@ By the identification assumption there is a unique maximizer, so the inequality
 : 
 \begin_inset Formula 
 \[
-s_{\infty}(\theta,\theta_{0})-s_{\infty}(\theta_{0},\theta_{0})<0,\forall\theta\neq\theta_{0},\textnormal{a.s.}
+s_{\infty}(\theta)<s_{\infty}(\theta_{0}),\forall\theta\neq\theta_{0},\textnormal{a.s.}
 \]
 
 \end_inset
@@ -28526,7 +28535,7 @@ Therefore,
 \end_inset
 
  is the unique maximizer of 
-\begin_inset Formula $s_{\infty}(\theta,\theta_{0}),$
+\begin_inset Formula $s_{\infty}(\theta),$
 \end_inset
 
  and thus, Theorem 
@@ -29092,86 +29101,6 @@ The form of this expression is the same as what we saw for extremum estimators
  This is no surprise, as the MLE is an extremum estimator.
 \end_layout
 
-\begin_layout Definition
-Consistent and asymptotically normal (CAN).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "def:CAN"
-
-\end_inset
-
-An estimator 
-\begin_inset Formula $\hat{\theta}$
-\end_inset
-
- of a parameter 
-\begin_inset Formula $\theta_{0}$
-\end_inset
-
- is 
-\begin_inset Formula $\sqrt{n}$
-\end_inset
-
--consistent and asymptotically normally distributed if 
-\begin_inset Formula $\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\overset{d}{\rightarrow}N\left(0,V_{\infty}\right)$
-\end_inset
-
- where 
-\begin_inset Formula $V_{\infty}$
-\end_inset
-
- is a finite positive definite matrix.
-\end_layout
-
-\begin_layout Standard
-There do exist, in special cases, estimators that are consistent such that
- 
-\begin_inset Formula $\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\overset{p}{\rightarrow}0.$
-\end_inset
-
- These are known as 
-\emph on
-superconsistent
-\emph default
- estimators, since in ordinary circumstances with stationary data, 
-\begin_inset Formula $\sqrt{n}$
-\end_inset
-
- is the highest factor that we can multiply by and still get convergence
- to a stable limiting distribution.
-\end_layout
-
-\begin_layout Definition
-Asymptotically unbiased.
- An estimator 
-\begin_inset Formula $\hat{\theta}$
-\end_inset
-
- of a parameter 
-\begin_inset Formula $\theta_{0}$
-\end_inset
-
- is asymptotically unbiased if 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lim_{n\rightarrow\infty}\mathcal{E_{\theta}}(\hat{\theta})=\theta$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Estimators that are CAN are asymptotically unbiased
-\emph default
-, though not all consistent estimators are asymptotically unbiased.
- Such cases are unusual, though.
- 
-\end_layout
-
 \begin_layout Section
 The information matrix equality
 \end_layout
@@ -29592,6 +29521,86 @@ For this example, find
 
 \begin_layout Section
 The Cramér-Rao lower bound
+\end_layout
+
+\begin_layout Definition
+Consistent and asymptotically normal (CAN).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "def:CAN"
+
+\end_inset
+
+An estimator 
+\begin_inset Formula $\hat{\theta}$
+\end_inset
+
+ of a parameter 
+\begin_inset Formula $\theta_{0}$
+\end_inset
+
+ is 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+-consistent and asymptotically normally distributed if 
+\begin_inset Formula $\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\overset{d}{\rightarrow}N\left(0,V_{\infty}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $V_{\infty}$
+\end_inset
+
+ is a finite positive definite matrix.
+\end_layout
+
+\begin_layout Standard
+There do exist, in special cases, estimators that are consistent such that
+ 
+\begin_inset Formula $\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\overset{p}{\rightarrow}0.$
+\end_inset
+
+ These are known as 
+\emph on
+superconsistent
+\emph default
+ estimators, since in ordinary circumstances with stationary data, 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+ is the highest factor that we can multiply by and still get convergence
+ to a stable limiting distribution.
+\end_layout
+
+\begin_layout Definition
+Asymptotically unbiased.
+ An estimator 
+\begin_inset Formula $\hat{\theta}$
+\end_inset
+
+ of a parameter 
+\begin_inset Formula $\theta_{0}$
+\end_inset
+
+ is asymptotically unbiased if 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\mathcal{E_{\theta}}(\hat{\theta})=\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Estimators that are CAN are asymptotically unbiased
+\emph default
+, though not all consistent estimators are asymptotically unbiased.
+ Such cases are unusual, though.
+ 
 \end_layout
 
 \begin_layout Theorem
@@ -30621,31 +30630,7 @@ the information matrix equality holds (that is,
 \end_inset
 
 .
- With this, 
-\begin_inset Formula 
-\[
-\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\stackrel{d}{\rightarrow}N\left[0,\mathcal{J}_{\infty}(\theta_{0})^{-1}\mathcal{I}_{\infty}(\theta_{0})\mathcal{J}_{\infty}(\theta_{0})^{-1}\right]
-\]
-
-\end_inset
-
- simplifies to 
-\begin_inset Formula 
-\[
-\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\stackrel{d}{\rightarrow}N\left[0,-\mathcal{J}_{\infty}(\theta_{0})^{-1}\right]
-\]
-
-\end_inset
-
- which can also be expressed as 
-\begin_inset Formula 
-\[
-\sqrt{n}\left(\hat{\theta}-\theta_{0}\right)\stackrel{d}{\rightarrow}N\left[0,\mathcal{I}_{\infty}(\theta_{0})^{-1}\right].
-\]
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -30975,52 +30960,9 @@ f_{D}(t|\theta)=e^{-\left(\lambda t\right)^{\gamma}}\lambda\gamma(\lambda t)^{\g
 
 \begin_layout Standard
 To illustrate application of this model, 402 observations on the lifespan
- of dwarf mongooses (see Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Dwarf-mongooses"
-
-\end_inset
-
-) in Serengeti National Park (Tanzania) were used to fit a Weibull model.
- 
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Dwarf-mongooses"
-
-\end_inset
-
-Dwarf mongooses
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Examples/NonlinearOptimization/dwarf20mongooses.jpg
-	lyxscale 25
-	width 8cm
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-The 
+ of dwarf mongooses in Serengeti National Park (Tanzania) were used to fit
+ a Weibull model.
+ The 
 \begin_inset Quotes sld
 \end_inset
 
@@ -32348,7 +32290,7 @@ reference "fig:Method-of-Moments"
 
 .
  The sample moment 
-\begin_inset Formula $Z$
+\begin_inset Formula $z$
 \end_inset
 
  will converge to the true moment 
@@ -32567,16 +32509,19 @@ V\left(Y\right)=E_{\theta^{0}}\left(Y-\theta^{0}\right)^{2}=2\theta^{0}.
 
 \begin_layout Example
 Let the statistic 
-\begin_inset Formula $z$
+\begin_inset Formula $Z$
 \end_inset
 
- be the sample variance: 
-\begin_inset Formula $z=\hat{V}\left(Y\right)=\frac{\sum_{t=1}^{n}\left(y_{t}-\bar{y}\right)^{2}}{n-1}$
+ be the sample variance, with realization 
+\begin_inset Formula 
+\[
+z=\hat{V}\left(Y\right)=\frac{\sum_{t=1}^{n}\left(y_{t}-\bar{y}\right)^{2}}{n-1}.
+\]
+
 \end_inset
 
-.
  Define the an alternative moment condition as the sample variance minus
- its expectation (which is the true variance):
+ its expectation under the model:
 \begin_inset Formula 
 \begin{align*}
 m(\theta) & =\hat{V}\left(Y\right)-2\theta\\
@@ -32607,7 +32552,8 @@ m(\hat{\theta})=\frac{\sum_{t=1}^{n}\left(y_{t}-\bar{y}\right)^{2}}{n-1}-2\hat{\
 
 \end_inset
 
- So, the estimator is half the sample variance: 
+ So, invertint to solve for the estimator, the estimator is half the sample
+ variance: 
 \begin_inset Formula 
 \[
 \hat{\theta}=\frac{1}{2}\frac{\sum_{t=1}^{n}\left(y_{t}-\bar{y}\right)^{2}}{n-1}.
@@ -32667,6 +32613,10 @@ htmladdnormallink{GMM/chi2mm.m}{https://github.com/mcreel/Econometrics/blob/mast
 \begin_layout Example
 Note that when you run the script, the two estimators give different results.
  Each of the two estimators is consistent.
+ Note that the fact that the data has a chi-squared distribution is not
+ used in estimation, it just as easily could have been normally distributed.
+ As long as the assumptions regarding the mean or variance are correct,
+ the MM estimators are consistent.
 \end_layout
 
 \begin_layout Itemize
@@ -32955,14 +32905,14 @@ reference "Consistency of ee"
 
  hold, so the GMM estimator is strongly consistent.
  The main requirement is that the moment conditions have mean zero at the
- true paraeter value, 
+ true parameter value, 
 \begin_inset Formula $\theta^{0}.$
 \end_inset
 
  This will be the case if our moment conditions are correctly specified.
  With this, it is clear that the minimum of the limiting objective function
  occurs at the true parameter value.
- The only assumption that warrants additional comments is that of identification.
+ The only assumption that warrants additional comment is that of identification.
  In Theorem 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -33152,7 +33102,14 @@ reference "Normality of ee"
 \end_layout
 
 \begin_layout Standard
-Now using the product rule from the introduction, 
+Now, using the product rule from section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Notation-for-differentiation"
+
+\end_inset
+
+, 
 \begin_inset Formula 
 \[
 \frac{\partial}{\partial\theta}s_{n}(\theta)=2\left[\frac{\partial}{\partial\theta}m_{n}^{^{\prime}}\left(\theta\right)\right]W_{n}m_{n}\left(\theta\right)
@@ -33164,7 +33121,7 @@ Now using the product rule from the introduction,
 \begin_inset Formula $\frac{\partial}{\partial\beta}\beta^{\prime}X^{\prime}X\beta=2X^{\prime}X\beta$
 \end_inset
 
- which appears when computing the first order conditions for the OLS estimator)
+ which appears when computing the first order conditions for the OLS estimator).
 \end_layout
 
 \begin_layout Standard
@@ -41366,7 +41323,7 @@ target "http://en.wikipedia.org/wiki/Kurtosis"
 
 \begin_layout Itemize
 leverage (negative correlation between returns and volatility), which often
- shows up as negative
+ shows up as negative 
 \begin_inset CommandInset href
 LatexCommand href
 name " skewness"
@@ -63810,6 +63767,12 @@ All vectors will be column vectors, unless they have a transpose symbol
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Notation-for-differentiation"
+
+\end_inset
+
 Notation for differentiation of vectors and matrices
 \end_layout
 

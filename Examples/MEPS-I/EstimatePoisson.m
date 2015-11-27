@@ -33,7 +33,7 @@ x = [ones(n,1) x];
 %x(:,end) = x(:,end)/1000;
 # choose one of the next 2 lines to see the effects of scaling the data
 [x scale] = scale_data(x); # scale the data
-%scale = 0; # don't scale the data
+#scale = 0; # don't scale the data
 data = [y x ];
 names = char("constant","pub. ins.","priv. ins.", "sex", "age","edu","inc");
 model = "Poisson";

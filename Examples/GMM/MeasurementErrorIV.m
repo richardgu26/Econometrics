@@ -34,10 +34,10 @@ function m = moments(theta, data)
 	x = data(:,3);
 	xlag = data(:,6);
 	xlag2 = data(:,9);
-	z = [ones(n,1) ylag x];
-	e = y - z*theta;
-	w = [ones(n,1) x xlag xlag2];
-	m = diag(e)*w;
+	X = [ones(n,1) ylag x];
+	e = y - X*theta;
+	Z = [ones(n,1) x xlag xlag2];
+	m = diag(e)*Z;
 endfunction	
 	
 # the function to be Monte Carlo'ed
@@ -74,7 +74,7 @@ reps = 1000;
 system('rm meas_error.out'); # start from scratch each time
 n_pooled = 100;
 verbose = true;
-montecarlo('wrapper', args, reps, outfile, n_pooled, false, true);
+montecarlo('wrapper', args, reps, outfile, n_pooled, true);
 
 
 # analyze results
